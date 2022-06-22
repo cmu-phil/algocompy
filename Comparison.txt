@@ -1,0 +1,53 @@
+21/06/2022 15:42:04
+
+Statistics:
+
+AP = Adjacency Precision
+AR = Adjacency Recall
+AHP = Arrowhead Precicion
+AHR = Arrowhead Recall
+McAdj = Matthews correlation coefficient for adjacencies
+McArrow = Matthews correlation coefficient for arrowheads
+F1Adj = F1 statistics for adjacencies
+F1Arrow = F1 statistics for arrowheads
+SHD = Structural Hamming Distance
+E = Elapsed time in secinds
+
+Simulation:
+
+**Write info here**
+
+Algorithms:
+
+1. PC
+2. FCI
+3. CDNOD
+
+Weighting of Statistics:
+
+**Write weighting here**
+
+AVERAGE STATISTICS
+
+All edges
+
+	Sim	AP	AR	AHP	AHR	McAdj	McArrow	F1Adj	F1Arrow	SHD	E	U
+
+STANDARD DEVIATION
+
+All edges
+
+	Sim	AP	AR	AHP	AHR	McAdj	McArrow	F1Adj	F1Arrow	SHD	E	U
+
+WORST CASE
+
+All edges
+
+	Sim	AP	AR	AHP	AHR	McAdj	McArrow	F1Adj	F1Arrow	SHD	E	U
+
+MEDIAN CASE
+
+All edges
+
+	Sim	AP	AR	AHP	AHR	McAdj	McArrow	F1Adj	F1Arrow	SHD	E	U
+

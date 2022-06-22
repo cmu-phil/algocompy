@@ -1,0 +1,35 @@
+20/06/2022 14:36:38
+
+Statistics:
+
+Simulation:
+
+**Write info here**
+
+Algorithms:
+
+1. PC
+2. FCI
+3. CDNOD
+
+Weight of Statistics:
+
+**Write weight here**
+
+AVERAGE STATISTICS
+
+All edges
+
+	Sim	AP	AR	AHP	AHR	McAdj	McArrow	F1Adj	F1Arrow	SHD	E	USTANDARD DEVIATION
+
+All edges
+
+	Sim	AP	AR	AHP	AHR	McAdj	McArrow	F1Adj	F1Arrow	SHD	E	UWORST CASE
+
+All edges
+
+	Sim	AP	AR	AHP	AHR	McAdj	McArrow	F1Adj	F1Arrow	SHD	E	UMEDIAN CASE
+
+All edges
+
+	Sim	AP	AR	AHP	AHR	McAdj	McArrow	F1Adj	F1Arrow	SHD	E	U
