@@ -127,4 +127,7 @@ class ArrowConfusion:
         if den2:
             b = self.__arrowsTp / den2
         b = np.NaN
-        return 2 * (a * b) / (a + b)
+        den3 = (a + b)
+        if den3:
+            return 2 * (a * b) / (a + b)
+        return np.NaN

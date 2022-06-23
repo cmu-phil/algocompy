@@ -23,7 +23,7 @@ def sample(p, d, N):
     #
     # E = random_vector(p, B)
     #
-    # Debup print for random_vector E
+    # Debug print for random_vector E
     # print(E)
     # print("-----------------------")
     #
