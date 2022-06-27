@@ -1,4 +1,4 @@
 p = 10
 d = 0.25
 N = 500
-runnum = 5
+runnum = 1

@@ -5,15 +5,13 @@ import random
 from numpy import ndarray
 
 
-
 def sample(p, d, N):
 
     g = random_dag(p, d)
-
     # I use dashed lines in my debugs for clarity and neatness
 
     # Debug print for random_dag g
-    # print(g)
+    print(g)
     # print("-----------------------")
 
     B = random_matrix(p, g)
@@ -32,7 +30,6 @@ def sample(p, d, N):
 
     # Final print
     return Sample, g
-
 
 
 # Generates my matrix but only contains 0 and 1
@@ -62,7 +59,8 @@ def random_dag(p, d):
 
 # Changes all ones to a random float value between -1 and 1
 def random_matrix(p, g):
-    B = g
+    #B = g
+    B = [x[:] for x in g]
 
     for a in range(p):
         for b in range(p):
@@ -96,4 +94,3 @@ def Linear_Gaussian(B, p, N):
         Sample[i:] = b
 
     return Sample
-

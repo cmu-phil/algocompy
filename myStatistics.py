@@ -66,30 +66,30 @@ def FCIstats (G, testfci):
 
     return fciStat
 
-def CDNODstats(G, testcdnod):
-    cdnodStat = []
+def GESstats(G, testges):
+    gesStat = []
 
-    ACcdnod = AdjConf.AdjacencyConfusion(G, testcdnod)
-    ArrCcdnod = ArrConf.ArrowConfusion(G, testcdnod)
+    ACcges = AdjConf.AdjacencyConfusion(G, testges)
+    ArrCges = ArrConf.ArrowConfusion(G, testges)
 
     #Adjacency and Arrowhead Stats
-    cdnodStat.append(ACcdnod.get_adj_precision())
-    cdnodStat.append(ACcdnod.get_adj_recall())
-    cdnodStat.append(ArrCcdnod.get_arrows_precision())
-    cdnodStat.append(ArrCcdnod.get_arrows_precision_ce())
-    cdnodStat.append(ArrCcdnod.get_arrows_recall())
-    cdnodStat.append(ArrCcdnod.get_arrows_recall_ce())
-    cdnodStat.append(ACcdnod.get_adj_Mc())
-    cdnodStat.append(ArrCcdnod.get_arrows_Mc())
-    cdnodStat.append(ACcdnod.get_adj_F1())
-    cdnodStat.append(ArrCcdnod.get_arrows_F1())
+    gesStat.append(ACcges.get_adj_precision())
+    gesStat.append(ACcges.get_adj_recall())
+    gesStat.append(ArrCges.get_arrows_precision())
+    gesStat.append(ArrCges.get_arrows_precision_ce())
+    gesStat.append(ArrCges.get_arrows_recall())
+    gesStat.append(ArrCges.get_arrows_recall_ce())
+    gesStat.append(ACcges.get_adj_Mc())
+    gesStat.append(ArrCges.get_arrows_Mc())
+    gesStat.append(ACcges.get_adj_F1())
+    gesStat.append(ArrCges.get_arrows_F1())
 
     #SHD calculation
-    SHDcdnod = shd.SHD(G, testcdnod)
+    SHDges = shd.SHD(G, testges)
 
-    cdnodStat.append(SHDcdnod.get_shd())
+    gesStat.append(SHDges.get_shd())
 
-    return cdnodStat
+    return gesStat
 
 def average (stats):
 
