@@ -3,7 +3,7 @@ import AdjacencyConfusion as AdjConf
 import ArrowConfusion as ArrConf
 import myStatistics as stat
 
-def makefile(pc, fci, cdnod):
+def makefile(pc, fci):
     with open("Comparison.txt", mode = "w") as c:
 
     #date and time
@@ -71,12 +71,12 @@ def makefile(pc, fci, cdnod):
             c.write('%s\t' % n)
         
         c.write('\n' + '\t')
-        c.write('3' + '\t')
-        cdnodStat = stat.average(cdnod)
-        for k in cdnodStat:
-            o = stat.truncate(k, 4)
-            c.write('%s\t' % o)
-        c.write('\n' + '\n')
+        # c.write('3' + '\t')
+        # cdnodStat = stat.average(cdnod)
+        # for k in cdnodStat:
+        #     o = stat.truncate(k, 4)
+        #     c.write('%s\t' % o)
+        # c.write('\n' + '\n')
 
         c.write('STANDARD DEVIATION')
         c.write('\n' + '\n')
@@ -99,12 +99,12 @@ def makefile(pc, fci, cdnod):
             c.write('%s\t' % n)
         
         c.write('\n' + '\t')
-        c.write('3' + '\t')
-        cdnodStat = stat.STdev(cdnod)
-        for k in cdnodStat:
-            o = stat.truncate(k, 4)
-            c.write('%s\t' % o)
-        c.write('\n' + '\n')
+        # c.write('3' + '\t')
+        # cdnodStat = stat.STdev(cdnod)
+        # for k in cdnodStat:
+        #     o = stat.truncate(k, 4)
+        #     c.write('%s\t' % o)
+        # c.write('\n' + '\n')
 
         c.write('WORST CASE')
         c.write('\n' + '\n')
@@ -137,10 +137,10 @@ def makefile(pc, fci, cdnod):
             c.write('%s\t' % n)
         
         c.write('\n' + '\t')
-        c.write('3' + '\t')
-        cdnodStat = stat.median(cdnod)
-        for k in cdnodStat:
-            o = stat.truncate(k, 4)
-            c.write('%s\t' % o)
-        c.write('\n' + '\n')
+        # c.write('3' + '\t')
+        # cdnodStat = stat.median(cdnod)
+        # for k in cdnodStat:
+        #     o = stat.truncate(k, 4)
+        #     c.write('%s\t' % o)
+        # c.write('\n' + '\n')
 

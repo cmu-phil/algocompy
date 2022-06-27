@@ -5,6 +5,7 @@ import random
 from numpy import ndarray
 
 
+
 def sample(p, d, N):
 
     g = random_dag(p, d)
@@ -66,7 +67,7 @@ def random_matrix(p, g):
     for a in range(p):
         for b in range(p):
             if B[a][b] == 1:
-                B[a][b] = random.uniform(-1, 1)
+                B[a][b] = random.choice([-1, 1]) * random.uniform(0.2, 0.9)
 
     return B
 

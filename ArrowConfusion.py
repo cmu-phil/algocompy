@@ -123,10 +123,12 @@ class ArrowConfusion:
         den2 = (self.__arrowsTp + self.__arrowsFn)
         if den1:
             a = self.__arrowsTp / den1
-        a = np.NaN
+        else:
+            a = np.NaN
         if den2:
             b = self.__arrowsTp / den2
-        b = np.NaN
+        else:
+            b = np.NaN
         den3 = (a + b)
         if den3:
             return 2 * (a * b) / (a + b)

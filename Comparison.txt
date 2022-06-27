@@ -1,4 +1,4 @@
-27/06/2022 09:15:51
+27/06/2022 14:55:12
 
 Statistics:
 
@@ -32,20 +32,16 @@ AVERAGE STATISTICS
 All edges
 
 	Sim	AP	AR	AHP	AHP_CE	AHR	AHR_CE	McAdj	McArrow	F1Adj	F1Arrow	SHD	E	U
-	1	nan	0.0	nan	nan	nan	nan	0.0	0.0	nan	nan	20.0	
-	2	4.6666	7.0	nan	nan	nan	nan	5.4576	0.0	nan	nan	20.0	
-	3	4.9166	6.5	nan	nan	nan	nan	5.3771	0.0	nan	nan	21.0	
-
-STANDARD DEVIATION
+	1	0.6428	0.8654	0.5031	0.7511	0.6511	0.6885	0.6594	0.5235	0.73	0.5612	7.6	
+	2	0.6428	0.8654	0.384	0.6217	0.7644	0.8257	0.6594	0.4777	0.73	0.5096	10.2	
+	STANDARD DEVIATION
 
 All edges
 
 	Sim	AP	AR	AHP	AHP_CE	AHR	AHR_CE	McAdj	McArrow	F1Adj	F1Arrow	SHD	E	U
-	1	nan	0.0	nan	nan	nan	nan	0.0	0.0	nan	nan	0.0	
-	2	0.1795	0.3316	nan	nan	nan	nan	0.2402	0.0	nan	nan	0.6324	
-	3	0.3383	0.3905	nan	nan	nan	nan	0.3683	0.0	nan	nan	1.5779	
-
-WORST CASE
+	1	0.1116	0.0784	0.2389	0.3012	0.3286	0.3285	0.0881	0.2981	0.0743	0.2657	2.5768	
+	2	0.1116	0.0784	0.121	0.2102	0.2363	0.23	0.0881	0.195	0.0743	0.1569	1.7204	
+	WORST CASE
 
 All edges
 
@@ -56,7 +52,6 @@ MEDIAN CASE
 All edges
 
 	Sim	AP	AR	AHP	AHP_CE	AHR	AHR_CE	McAdj	McArrow	F1Adj	F1Arrow	SHD	E	U
-	1	nan	0.0	nan	nan	nan	nan	0.0	0.0	nan	nan	2.0	
-	2	0.5	0.75	nan	nan	nan	nan	0.5836	0.0	nan	nan	2.0	
-	3	0.5	0.75	nan	nan	nan	nan	0.5836	0.0	nan	nan	2.0	
-
+	1	0.6428	0.8181	0.5384	0.8888	0.8	0.8	0.6386	0.7097	0.72	0.7	7.0	
+	2	0.6428	0.8181	0.421	0.6153	0.8888	1.0	0.6386	0.5602	0.72	0.5714	10.0	
+	

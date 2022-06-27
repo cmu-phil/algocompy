@@ -19,6 +19,8 @@ from causallearn.search.ConstraintBased.CDNOD import cdnod
 #from causallearn.search.PermutationBased.GRaSP import grasp
 from causallearn.utils.cit import chisq, fisherz, gsq, kci, mv_fisherz
 
+from causallearn.utils.DAG2CPDAG import dag2cpdag
+
 def run():
 
     PC = []
@@ -35,16 +37,18 @@ def run():
         # True Graph
         G = TG.makeTrueGraph(g)
 
+        G = dag2cpdag(G)
+
         # Algorythims
-        testpc = pc(data, const.d, gsq, True, 0, -1 )
+        testpc = pc(data, const.d, fisherz, True, 0, -1 )
         print("---------------------------------------")
 
         testfci = fci(data, fisherz, const.d, verbose=False)
         print("---------------------------------------")
         
-        c_indx = np.reshape(np.asarray(list(range(data.shape[0]))), (data.shape[0],1))
+        #c_indx = np.reshape(np.asarray(list(range(data.shape[0]))), (data.shape[0],1))
         #print(c_indx)
-        testcdnod = cdnod(data, c_indx, const.d, kci, True, 0, -1)
+        #testcdnod = cdnod(data, c_indx, const.d, kci, True, 0, -1)
         print("---------------------------------------")
 
         # testgrasp = grasp.grasp()
@@ -56,16 +60,16 @@ def run():
         fciPerformance = Stat.FCIstats (G, testfci)
         FCI.append(fciPerformance)
 
-        cdnodPerformance = Stat.CDNODstats (G, testcdnod.G)
-        CDNOD.append(cdnodPerformance)
+        #cdnodPerformance = Stat.CDNODstats (G, testcdnod.G)
+        #CDNOD.append(cdnodPerformance)
 
         i += 1
 
     np.savetxt('PC-OUTPUT.txt', PC, delimiter = '\t')
     np.savetxt('FCI-OUTPUT.txt', FCI, delimiter = '\t')
-    np.savetxt('CDNOD-OUTPUT.txt', CDNOD, delimiter = '\t')
+    #np.savetxt('CDNOD-OUTPUT.txt', CDNOD, delimiter = '\t')
 
-    MR.makefile(PC, FCI, CDNOD)
+    MR.makefile(PC, FCI)
 
 
     print("finish")

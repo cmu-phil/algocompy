@@ -93,7 +93,7 @@ def CDNODstats(G, testcdnod):
 
 def average (stats):
 
-    s = np.sum(stats, axis=0)
+    s = np.mean(stats, axis=0)
 
     return s
 
