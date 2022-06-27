@@ -1,6 +1,7 @@
 from datetime import datetime
 import AdjacencyConfusion as AdjConf
 import ArrowConfusion as ArrConf
+import myStatistics as stat
 
 def makefile(pc, fci, cdnod):
     with open("Comparison.txt", mode = "w") as c:
@@ -54,7 +55,27 @@ def makefile(pc, fci, cdnod):
         c.write('All edges')
         c.write('\n' + '\n')
         c.write('\tSim' + '\tAP' + '\tAR' + '\tAHP' + '\tAHP_CE' + '\tAHR' + '\tAHR_CE' + '\tMcAdj' + '\tMcArrow' + '\tF1Adj' + '\tF1Arrow' + '\tSHD' + '\tE' + '\tU')
-        #Place array with all results here
+        
+        c.write('\n' + '\t')
+        c.write('1' + '\t')
+        pcStat = stat.average(pc)
+        for i in pcStat:
+            m = stat.truncate(i, 4)
+            c.write('%s\t' % m)
+        
+        c.write('\n' + '\t')
+        c.write('2' + '\t')
+        fciStat = stat.average(fci)
+        for j in fciStat:
+            n = stat.truncate(j, 4)
+            c.write('%s\t' % n)
+        
+        c.write('\n' + '\t')
+        c.write('3' + '\t')
+        cdnodStat = stat.average(cdnod)
+        for k in cdnodStat:
+            o = stat.truncate(k, 4)
+            c.write('%s\t' % o)
         c.write('\n' + '\n')
 
         c.write('STANDARD DEVIATION')
@@ -63,7 +84,26 @@ def makefile(pc, fci, cdnod):
         c.write('All edges')
         c.write('\n' + '\n')
         c.write('\tSim' + '\tAP' + '\tAR' + '\tAHP' + '\tAHP_CE' + '\tAHR' + '\tAHR_CE' + '\tMcAdj' + '\tMcArrow' + '\tF1Adj' + '\tF1Arrow' + '\tSHD' + '\tE' + '\tU')
-        #Place array with all results here
+        c.write('\n' + '\t')
+        c.write('1' + '\t')
+        pcStat = stat.STdev(pc)
+        for i in pcStat:
+            m = stat.truncate(i, 4)
+            c.write('%s\t' % m)
+        
+        c.write('\n' + '\t')
+        c.write('2' + '\t')
+        fciStat = stat.STdev(fci)
+        for j in fciStat:
+            n = stat.truncate(j, 4)
+            c.write('%s\t' % n)
+        
+        c.write('\n' + '\t')
+        c.write('3' + '\t')
+        cdnodStat = stat.STdev(cdnod)
+        for k in cdnodStat:
+            o = stat.truncate(k, 4)
+            c.write('%s\t' % o)
         c.write('\n' + '\n')
 
         c.write('WORST CASE')
@@ -81,6 +121,26 @@ def makefile(pc, fci, cdnod):
         c.write('All edges')
         c.write('\n' + '\n')
         c.write('\tSim' + '\tAP' + '\tAR' + '\tAHP' + '\tAHP_CE' + '\tAHR' + '\tAHR_CE' + '\tMcAdj' + '\tMcArrow' + '\tF1Adj' + '\tF1Arrow' + '\tSHD' + '\tE' + '\tU')
-        #Place array with all results here
+        
+        c.write('\n' + '\t')
+        c.write('1' + '\t')
+        pcStat = stat.median(pc)
+        for i in pcStat:
+            m = stat.truncate(i, 4)
+            c.write('%s\t' % m)
+        
+        c.write('\n' + '\t')
+        c.write('2' + '\t')
+        fciStat = stat.median(fci)
+        for j in fciStat:
+            n = stat.truncate(j, 4)
+            c.write('%s\t' % n)
+        
+        c.write('\n' + '\t')
+        c.write('3' + '\t')
+        cdnodStat = stat.median(cdnod)
+        for k in cdnodStat:
+            o = stat.truncate(k, 4)
+            c.write('%s\t' % o)
         c.write('\n' + '\n')
 

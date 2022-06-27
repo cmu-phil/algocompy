@@ -95,3 +95,4 @@ def Linear_Gaussian(B, p, N):
         Sample[i:] = b
 
     return Sample
+

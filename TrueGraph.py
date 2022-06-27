@@ -7,7 +7,7 @@ from causallearn.graph.GeneralGraph import GeneralGraph
 from causallearn.utils.DAG2CPDAG import dag2cpdag
 
 def makeTrueGraph(g):
-    M = const.N
+    M = const.p
 
     nodes = [GraphNode('X'+str(x)) for x in range(1, M+1)]
 

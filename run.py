@@ -2,7 +2,7 @@
 import constants as const
 import RandomSample as sampler
 import TrueGraph as TG
-import Statistics as Stat
+import myStatistics as Stat
 import MakeResults as MR
 
 # useful python libraries
@@ -11,9 +11,12 @@ import numpy as np
 # causal-learn package
 import causallearn as cl
 
+# import GRaSP as gp
+
 from causallearn.search.ConstraintBased.PC import pc
 from causallearn.search.ConstraintBased.FCI import fci
 from causallearn.search.ConstraintBased.CDNOD import cdnod
+#from causallearn.search.PermutationBased.GRaSP import grasp
 from causallearn.utils.cit import chisq, fisherz, gsq, kci, mv_fisherz
 
 def run():
@@ -44,7 +47,9 @@ def run():
         testcdnod = cdnod(data, c_indx, const.d, kci, True, 0, -1)
         print("---------------------------------------")
 
+        # testgrasp = grasp.grasp()
 
+        
         pcPerformance = Stat.PCstats (G, testpc.G)
         PC.append(pcPerformance)
         
@@ -59,7 +64,8 @@ def run():
     np.savetxt('PC-OUTPUT.txt', PC, delimiter = '\t')
     np.savetxt('FCI-OUTPUT.txt', FCI, delimiter = '\t')
     np.savetxt('CDNOD-OUTPUT.txt', CDNOD, delimiter = '\t')
-    #MR.makefile(pcStat, fciStat, cdnodStat)
+
+    MR.makefile(PC, FCI, CDNOD)
 
 
     print("finish")
