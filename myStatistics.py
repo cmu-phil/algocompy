@@ -109,6 +109,12 @@ def median (stats):
 
     return s
 
+def worstCase (stats):
+
+    s = np.amin(stats, axis=0)
+
+    return s
+
 def truncate (n, decimals=0):
     a = math.isnan(n)
     if a:

@@ -11,8 +11,6 @@ import numpy as np
 # causal-learn package
 import causallearn as cl
 
-# import GRaSP as gp
-
 from causallearn.search.ConstraintBased.PC import pc
 from causallearn.search.ConstraintBased.FCI import fci
 from causallearn.search.ScoreBased.GES import ges
@@ -41,7 +39,6 @@ def run():
 
         print("---------------------------------------")
         
-
         # Algorythims
         testpc = pc(data, 0.01, fisherz, True, 0, -1 )
         print("---------------------------------------")
@@ -82,9 +79,7 @@ def run():
 
     MR.makefile(PC, FCI, GES)
 
-
     print("finish")
-
 
 if __name__ == "__main__":
     run()
