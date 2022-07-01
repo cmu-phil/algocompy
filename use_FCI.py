@@ -49,26 +49,26 @@ def FCIstats(G, testfci):
 
     return fciStat
 
-def FCI_average(FCI, c):
-    pcStat = stat.average(FCI)
-    for i in pcStat:
-        m = stat.truncate(i, 2)
-        c.write('%s\t' % m)
+# def FCI_average(FCI, c):
+#     pcStat = stat.average(FCI)
+#     for i in pcStat:
+#         m = stat.truncate(i, 2)
+#         c.write('%s\t' % m)
 
-def FCI_stDev(FCI, c):
-    pcStat = stat.STdev(FCI)
-    for i in pcStat:
-        m = stat.truncate(i, 2)
-        c.write('%s\t' % m)
+# def FCI_stDev(FCI, c):
+#     pcStat = stat.STdev(FCI)
+#     for i in pcStat:
+#         m = stat.truncate(i, 2)
+#         c.write('%s\t' % m)
 
-def FCI_worstCase(FCI, c):
-    pcStat = stat.worstCase(FCI)
-    for i in pcStat:
-        m = stat.truncate(i, 2)
-        c.write('%s\t' % m)
+# def FCI_worstCase(FCI, c):
+#     pcStat = stat.worstCase(FCI)
+#     for i in pcStat:
+#         m = stat.truncate(i, 2)
+#         c.write('%s\t' % m)
 
-def FCI_medianCase(FCI, c):
-    pcStat = stat.median(FCI)
-    for i in pcStat:
-        m = stat.truncate(i, 2)
-        c.write('%s\t' % m)
+# def FCI_medianCase(FCI, c):
+#     pcStat = stat.median(FCI)
+#     for i in pcStat:
+#         m = stat.truncate(i, 2)
+#         c.write('%s\t' % m)

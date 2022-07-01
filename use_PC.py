@@ -47,26 +47,26 @@ def PCstats(G, testpc):
 
     return pcStat
 
-def PC_average(PC, c):
-    pcStat = stat.average(PC)
-    for i in pcStat:
-        m = stat.truncate(i, 2)
-        c.write('%s\t' % m)
+# def PC_average(PC, c):
+#     pcStat = stat.average(PC)
+#     for i in pcStat:
+#         m = stat.truncate(i, 2)
+#         c.write('%s\t' % m)
 
-def PC_stDev(PC, c):
-    pcStat = stat.STdev(PC)
-    for i in pcStat:
-        m = stat.truncate(i, 2)
-        c.write('%s\t' % m)
+# def PC_stDev(PC, c):
+#     pcStat = stat.STdev(PC)
+#     for i in pcStat:
+#         m = stat.truncate(i, 2)
+#         c.write('%s\t' % m)
 
-def PC_worstCase(PC, c):
-    pcStat = stat.worstCase(PC)
-    for i in pcStat:
-        m = stat.truncate(i, 2)
-        c.write('%s\t' % m)
+# def PC_worstCase(PC, c):
+#     pcStat = stat.worstCase(PC)
+#     for i in pcStat:
+#         m = stat.truncate(i, 2)
+#         c.write('%s\t' % m)
 
-def PC_medianCase(PC, c):
-    pcStat = stat.median(PC)
-    for i in pcStat:
-        m = stat.truncate(i, 2)
-        c.write('%s\t' % m)
+# def PC_medianCase(PC, c):
+#     pcStat = stat.median(PC)
+#     for i in pcStat:
+#         m = stat.truncate(i, 2)
+#         c.write('%s\t' % m)

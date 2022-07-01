@@ -1,11 +1,9 @@
 from datetime import datetime
-import use_PC
-import use_FCI
-import use_GES
+import myStatistics as stat
 
 
 
-def makefile (PC, FCI, GES):
+def makefile (estG1, estG2, estG3):
     with open("Comparison.txt", mode = "w") as c:
 
         dateandtime(c)
@@ -23,13 +21,13 @@ def makefile (PC, FCI, GES):
         tableHeader(c)
         c.write('\n' + '\t')
         c.write('1' + '\t')
-        use_PC.PC_average(PC, c)
+        average(estG1, c)
         c.write('\n' + '\t')
         c.write('2' + '\t')
-        use_FCI.FCI_average(FCI, c)
+        average(estG2, c)
         c.write('\n' + '\t')
         c.write('3' + '\t')
-        use_FCI.FCI_average(GES, c)
+        average(estG3, c)
 
         c.write('\n' + '\n')
         c.write("STANDARD DEVIATION:")
@@ -37,13 +35,13 @@ def makefile (PC, FCI, GES):
         tableHeader(c)
         c.write('\n' + '\t')
         c.write('1' + '\t')
-        use_PC.PC_stDev(PC, c)
+        stDev(estG1, c)
         c.write('\n' + '\t')
         c.write('2' + '\t')
-        use_FCI.FCI_stDev(FCI, c)
+        stDev(estG2, c)
         c.write('\n' + '\t')
         c.write('3' + '\t')
-        use_FCI.FCI_stDev(GES, c)
+        stDev(estG3, c)
 
         c.write('\n' + '\n')
         c.write("WORST CASE:")
@@ -51,13 +49,13 @@ def makefile (PC, FCI, GES):
         tableHeader(c)
         c.write('\n' + '\t')
         c.write('1' + '\t')
-        use_PC.PC_worstCase(PC, c)
+        worstCase(estG1, c)
         c.write('\n' + '\t')
         c.write('2' + '\t')
-        use_FCI.FCI_worstCase(FCI, c)
+        worstCase(estG2, c)
         c.write('\n' + '\t')
         c.write('3' + '\t')
-        use_FCI.FCI_worstCase(GES, c)
+        worstCase(estG3, c)
 
         c.write('\n' + '\n')
         c.write("MEDIAN CASE:")
@@ -65,13 +63,13 @@ def makefile (PC, FCI, GES):
         tableHeader(c)
         c.write('\n' + '\t')
         c.write('1' + '\t')
-        use_PC.PC_medianCase(PC, c)
+        medianCase(estG1, c)
         c.write('\n' + '\t')
         c.write('2' + '\t')
-        use_FCI.FCI_medianCase(FCI, c)
+        medianCase(estG2, c)
         c.write('\n' + '\t')
         c.write('3' + '\t')
-        use_FCI.FCI_medianCase(GES, c)
+        medianCase(estG3, c)
 
 
 def dateandtime (c):
@@ -119,3 +117,28 @@ def tableHeader (c):
     c.write('All edges')
     c.write('\n' + '\n')
     c.write('\tAlg   AP      AR     AHP   AHPCE     AHR   AHRCE   McAdj   McArr   F1Adj   F1Arr     SHD    E')
+
+
+def average(EstG, c):
+    GStat = stat.average(EstG)
+    for i in GStat:
+        m = stat.truncate(i, 2)
+        c.write('%s\t' % m)
+
+def stDev(EstG, c):
+    GStat = stat.STdev(EstG)
+    for i in GStat:
+        m = stat.truncate(i, 2)
+        c.write('%s\t' % m)
+
+def worstCase(EstG, c):
+    GStat = stat.worstCase(EstG)
+    for i in GStat:
+        m = stat.truncate(i, 2)
+        c.write('%s\t' % m)
+
+def medianCase(EstG, c):
+    GStat = stat.median(EstG)
+    for i in GStat:
+        m = stat.truncate(i, 2)
+        c.write('%s\t' % m)

@@ -9,11 +9,11 @@ def run():
     p = 10
     d = 0.25
     N = 500
-    runnum = 5
+    runnum = 1
 
-    PC = []
-    FCI = []
-    GES = []
+    EstG1 = []
+    EstG2 = []
+    EstG3 = []
 
     for i in range(runnum):
         print("run number:", i+1)
@@ -24,13 +24,13 @@ def run():
         G1 = TG.TrueGraph(g, p, 1)
 
         pcPerformance = use_PC.PC(data, G1)
-        PC.append(pcPerformance)
+        EstG1.append(pcPerformance)
 
         fciperformance = use_FCI.FCI(data, G1)
-        FCI.append(fciperformance)
+        EstG2.append(fciperformance)
 
         gesperformance = use_GES.GES(data, G0)
-        GES.append(gesperformance)
+        EstG3.append(gesperformance)
 
         i += 1
     
@@ -38,13 +38,11 @@ def run():
     # np.savetxt('FCI-OUTPUT.txt', FCI, delimiter = '\t')
     # np.savetxt('GES-OUTPUT.txt', GES, delimiter = '\t')
 
-    mf.makefile(PC, FCI, GES)
+    mf.makefile(EstG1, EstG2, EstG3)
 
     print("------------------")
     print("------finish------")
     print("------------------")
-
-
 
 
 if __name__ == "__main__":
