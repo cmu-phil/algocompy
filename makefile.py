@@ -2,8 +2,7 @@ from datetime import datetime
 import myStatistics as stat
 
 
-
-def makefile (estG1, estG2, estG3):
+def makefile (estG1, estG2):
     with open("Comparison.txt", mode = "w") as c:
 
         dateandtime(c)
@@ -27,7 +26,7 @@ def makefile (estG1, estG2, estG3):
         average(estG2, c)
         c.write('\n' + '\t')
         c.write('3' + '\t')
-        average(estG3, c)
+        #average(estG3, c)
 
         c.write('\n' + '\n')
         c.write("STANDARD DEVIATION:")
@@ -41,7 +40,7 @@ def makefile (estG1, estG2, estG3):
         stDev(estG2, c)
         c.write('\n' + '\t')
         c.write('3' + '\t')
-        stDev(estG3, c)
+        #stDev(estG3, c)
 
         c.write('\n' + '\n')
         c.write("WORST CASE:")
@@ -55,7 +54,7 @@ def makefile (estG1, estG2, estG3):
         worstCase(estG2, c)
         c.write('\n' + '\t')
         c.write('3' + '\t')
-        worstCase(estG3, c)
+        #worstCase(estG3, c)
 
         c.write('\n' + '\n')
         c.write("MEDIAN CASE:")
@@ -69,7 +68,7 @@ def makefile (estG1, estG2, estG3):
         medianCase(estG2, c)
         c.write('\n' + '\t')
         c.write('3' + '\t')
-        medianCase(estG3, c)
+        #medianCase(estG3, c)
 
 
 def dateandtime (c):

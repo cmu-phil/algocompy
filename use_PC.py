@@ -5,6 +5,9 @@ import ArrowConfusion as ArrConf
 import SHD as shd
 import myStatistics as stat
 
+import tetrad_cmd_algs as tc
+import pandas as pd
+
 def PC(data, G):
     """
     Runs PC algorithm with given data.
@@ -15,9 +18,12 @@ def PC(data, G):
     G: true graph
     """
 
-    testpc = pc(data, 0.01, fisherz, True, 0, -1)
+    # testpc = pc(data, 0.01, fisherz, True, 0, -1).G
 
-    pcPerformance = PCstats(G, testpc.G)
+    pd.DataFrame(data, columns=G.get_node_names()).to_csv("PC-INPUT.txt", sep="\t", index=False)
+    testpc = tc.pc("./PC-INPUT.txt", 0.01)
+
+    pcPerformance = PCstats(G, testpc)
 
     return pcPerformance
 
@@ -46,27 +52,3 @@ def PCstats(G, testpc):
     pcStat.append(SHDpc.get_shd())
 
     return pcStat
-
-# def PC_average(PC, c):
-#     pcStat = stat.average(PC)
-#     for i in pcStat:
-#         m = stat.truncate(i, 2)
-#         c.write('%s\t' % m)
-
-# def PC_stDev(PC, c):
-#     pcStat = stat.STdev(PC)
-#     for i in pcStat:
-#         m = stat.truncate(i, 2)
-#         c.write('%s\t' % m)
-
-# def PC_worstCase(PC, c):
-#     pcStat = stat.worstCase(PC)
-#     for i in pcStat:
-#         m = stat.truncate(i, 2)
-#         c.write('%s\t' % m)
-
-# def PC_medianCase(PC, c):
-#     pcStat = stat.median(PC)
-#     for i in pcStat:
-#         m = stat.truncate(i, 2)
-#         c.write('%s\t' % m)
