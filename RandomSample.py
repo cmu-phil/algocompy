@@ -1,4 +1,3 @@
-import constants as const
 import numpy as np
 import random
 
@@ -11,7 +10,7 @@ def sample(p, d, N):
     # I use dashed lines in my debugs for clarity and neatness
 
     # Debug print for random_dag g
-    print(g)
+    # print(g)
     # print("-----------------------")
 
     B = random_matrix(p, g)

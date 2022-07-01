@@ -1,85 +1,51 @@
-# files withing the project
-import constants as const
-import RandomSample as sampler
-import TrueGraph as TG
-import myStatistics as Stat
-import MakeResults as MR
-
-# useful python libraries
-import numpy as np
-
-# causal-learn package
-import causallearn as cl
-
-from causallearn.search.ConstraintBased.PC import pc
-from causallearn.search.ConstraintBased.FCI import fci
-from causallearn.search.ScoreBased.GES import ges
-#from causallearn.search.ConstraintBased.CDNOD import cdnod
-#from causallearn.search.PermutationBased.GRaSP import grasp
-from causallearn.utils.cit import chisq, fisherz, gsq, kci, mv_fisherz
-
-from causallearn.utils.DAG2CPDAG import dag2cpdag
+import randomSample as sampler
+import truegraph as TG
+import use_PC
+import use_FCI
+import use_GES
+import makefile as mf
 
 def run():
+    p = 10
+    d = 0.25
+    N = 500
+    runnum = 5
 
     PC = []
     FCI = []
     GES = []
 
-    runnum = const.runnum
     for i in range(runnum):
-        print('run number:', i+1)
-        # Generating random samples
-        data, g = sampler.sample(const.p, const.d, const.N)
-        #print(data)
+        print("run number:", i+1)
 
-        # True Graph
-        G0 = TG.makeTrueGraph_0(g)
-        G1 = TG.makeTrueGraph_1(g)
+        data, g = sampler.sample(p, d, N)
 
-        print("---------------------------------------")
-        
-        # Algorythims
-        testpc = pc(data, 0.01, fisherz, True, 0, -1 )
-        print("---------------------------------------")
+        G0 = TG.TrueGraph(g, p, 0)
+        G1 = TG.TrueGraph(g, p, 1)
 
-        testfci = fci(data, fisherz, 0.01, verbose=False)
-        print("---------------------------------------")
-        
-        #c_indx = np.reshape(np.asarray(list(range(data.shape[0]))), (data.shape[0],1))
-        #print(c_indx)
-        #testcdnod = cdnod(data, c_indx, const.d, kci, True, 0, -1)
-        maxP = 5
-        parameters = {}
-        # parameters["lambda_value"] = -2
-        parameters["kfold"] = 5
-        parameters["lambda"] = 0.01
-        testges = ges(data, 'local_score_CV_general', maxP=maxP, parameters=parameters)['G']
-        
-        print(testges)
-
-        print("---------------------------------------")
-
-        # testgrasp = grasp.grasp()
-
-        pcPerformance = Stat.PCstats (G1, testpc.G)
+        pcPerformance = use_PC.PC(data, G1)
         PC.append(pcPerformance)
-        
-        fciPerformance = Stat.FCIstats (G1, testfci)
-        FCI.append(fciPerformance)
 
-        gesPerformance = Stat.GESstats (G0, testges)
-        GES.append(gesPerformance)
+        fciperformance = use_FCI.FCI(data, G1)
+        FCI.append(fciperformance)
+
+        gesperformance = use_GES.GES(data, G0)
+        GES.append(gesperformance)
 
         i += 1
+    
+    # np.savetxt('PC-OUTPUT.txt', PC, delimiter = '\t')
+    # np.savetxt('FCI-OUTPUT.txt', FCI, delimiter = '\t')
+    # np.savetxt('GES-OUTPUT.txt', GES, delimiter = '\t')
 
-    np.savetxt('PC-OUTPUT.txt', PC, delimiter = '\t')
-    np.savetxt('FCI-OUTPUT.txt', FCI, delimiter = '\t')
-    np.savetxt('GES-OUTPUT.txt', GES, delimiter = '\t')
+    mf.makefile(PC, FCI, GES)
 
-    MR.makefile(PC, FCI, GES)
+    print("------------------")
+    print("------finish------")
+    print("------------------")
 
-    print("finish")
+
+
 
 if __name__ == "__main__":
     run()
