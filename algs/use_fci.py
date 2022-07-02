@@ -1,17 +1,8 @@
 from causallearn.search.ConstraintBased.FCI import fci
-from causallearn.utils.cit import chisq, fisherz, gsq, kci, mv_fisherz
-import AdjacencyConfusion as AdjConf
-import ArrowConfusion as ArrConf
-import SHD as shd
-import myStatistics as stat
-from causallearn.utils.DAG2PAG import dag2pag
-import numpy as np
-import sys
+from utils import AdjacencyConfusion as AdjConf, ArrowConfusion as ArrConf
 
-from causallearn.graph.GraphNode import GraphNode
-from causallearn.graph.GeneralGraph import GeneralGraph
-from causallearn.search.ConstraintBased.PC import pc
-from causallearn.utils.cit import chisq, fisherz, gsq, kci, mv_fisherz
+from causallearn.utils.cit import fisherz
+from utils.SHD import SHD
 
 
 def FCI(data, G):
@@ -24,10 +15,9 @@ def FCI(data, G):
     G: true graph
     """
 
-    # testfci = fci(data, fisherz, 0.01, verbose=False)
-    testpc = pc(data, 0.01, fisherz, True, 0, -1).G
+    testfci = fci(data, fisherz, 0.01, verbose=False)
 
-    fciPerformance = FCIstats(G, testpc)
+    fciPerformance = FCIstats(G, testfci)
 
     return fciPerformance
 
@@ -51,7 +41,7 @@ def FCIstats(G, testfci):
     fciStat.append(ArrCfci.get_arrows_F1())
 
     # SHD
-    SHDfci = shd.SHD(G, testfci)
+    SHDfci = SHD(G, testfci)
 
     fciStat.append(SHDfci.get_shd())
 

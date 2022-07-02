@@ -1,5 +1,5 @@
 ================================================================================
-PC (Fri, July 01, 2022 03:51:49 PM)
+GRaSP (Sat, July 02, 2022 01:15:14 PM)
 ================================================================================
 
 Runtime Parameters
@@ -8,7 +8,7 @@ number of threads: 7
 
 Dataset
 --------------------------------------------------------------------------------
-file: PC-INPUT.txt
+file: GRaSP-INPUT.txt
 header: yes
 delimiter: tab
 quote char: none
@@ -17,51 +17,93 @@ comment marker: none
 
 Algorithm Run
 --------------------------------------------------------------------------------
-algorithm: PC
+algorithm: GRaSP
 test of independence: Fisher Z Test
+score: Sem BIC Score
 
 Algorithm Parameters
 --------------------------------------------------------------------------------
 addOriginalDataset: no
 alpha: 0.01
-concurrentFAS: no
-conflictRule: 3
-depth: -1
-fasHeuristic: 1
-maxPOrientationMaxPathLength: 3
+cacheScores: no
+graspDepth: 4
+graspNonSingularDepth: 1
+graspOrderedAlg: no
+graspSingularDepth: 1
+graspUseDataOrder: no
+graspUseVermaPearl: no
+numStarts: 1
 numberResampling: 0
+penaltyDiscount: 2
 percentResampleSize: 90
+precomputeCovariances: yes
 resamplingEnsemble: 1
 resamplingWithReplacement: no
-stableFAS: no
+semBicRule: 1
+semBicStructurePrior: 0.0
 timeLag: 0
-useMaxPOrientationHeuristic: no
-verbose: no
+verbose: yes
 
 
-Fri, July 01, 2022 03:51:49 PM: Start data validation on file PC-INPUT.txt.
-Fri, July 01, 2022 03:51:49 PM: End data validation on file PC-INPUT.txt.
-There are 500 cases and 10 variables.
+Sat, July 02, 2022 01:15:14 PM: Start data validation on file GRaSP-INPUT.txt.
+Sat, July 02, 2022 01:15:14 PM: End data validation on file GRaSP-INPUT.txt.
+There are 1000 cases and 20 variables.
 
-Fri, July 01, 2022 03:51:49 PM: Start reading in file PC-INPUT.txt.
-Fri, July 01, 2022 03:51:49 PM: Finished reading in file PC-INPUT.txt.
-Fri, July 01, 2022 03:51:49 PM: File PC-INPUT.txt contains 500 cases, 10 variables.
+Sat, July 02, 2022 01:15:14 PM: Start reading in file GRaSP-INPUT.txt.
+Sat, July 02, 2022 01:15:14 PM: Finished reading in file GRaSP-INPUT.txt.
+Sat, July 02, 2022 01:15:14 PM: File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
 
-Start search: Fri, July 01, 2022 03:51:49 PM
-End search: Fri, July 01, 2022 03:51:49 PM
+Start search: Sat, July 02, 2022 01:15:14 PM
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End search: Sat, July 02, 2022 01:15:15 PM
 
 ================================================================================
 Graph Nodes:
-X1;X2;X3;X4;X5;X6;X7;X8;X9;X10
+X1;X2;X3;X4;X5;X6;X7;X8;X9;X10;X11;X12;X13;X14;X15;X16;X17;X18;X19;X20
 
 Graph Edges:
-1. X1 --- X9
-2. X2 --- X5
-3. X3 --> X10
-4. X3 --> X8
-5. X5 --- X9
-6. X6 --> X4
-7. X6 --> X8
-8. X7 --> X4
-9. X9 --> X10
-10. X9 --> X8
+1. X1 --> X11
+2. X1 --> X15
+3. X1 --> X18
+4. X10 --> X14
+5. X10 --> X20
+6. X11 --> X14
+7. X11 --> X16
+8. X11 --> X18
+9. X12 --> X18
+10. X13 --> X17
+11. X13 --> X19
+12. X13 --> X6
+13. X14 --> X20
+14. X15 --> X17
+15. X16 --> X18
+16. X2 --> X17
+17. X2 --> X18
+18. X2 --- X3
+19. X2 --> X7
+20. X4 --> X13
+21. X4 --> X16
+22. X4 --> X20
+23. X5 --- X12
+24. X5 --> X18
+25. X5 --> X7
+26. X6 --> X1
+27. X6 --> X10
+28. X6 --> X14
+29. X6 --> X15
+30. X6 --> X16
+31. X6 --> X17
+32. X7 --> X11
+33. X7 --> X13
+34. X7 --> X16
+35. X7 --> X18
+36. X7 --> X6
+37. X8 --> X10
+38. X8 --> X18
+39. X8 --> X19
+40. X9 --> X1
+41. X9 --> X13
+
+Graph Attributes:
+score : 34139.9688

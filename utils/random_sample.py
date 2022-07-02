@@ -14,6 +14,9 @@ def sample(p, d, N):
     # print("-----------------------")
 
     B = random_matrix(p, g)
+
+
+
     #
     # # Debug print for random_matrix B
     # print(B)
@@ -26,6 +29,10 @@ def sample(p, d, N):
     # print("-----------------------")
     #
     Sample = Linear_Gaussian(B, p, N)
+
+    # permutation = np.random.permutation(Sample.shape[1])
+    # g = g[permutation, permutation]
+    # Sample = Sample[:, permutation]
 
     # Final print
     return Sample, g
@@ -64,19 +71,20 @@ def random_matrix(p, g):
     for a in range(p):
         for b in range(p):
             if B[a][b] == 1:
-                B[a][b] = random.choice([-1, 1]) * random.uniform(0.2, 0.9)
+               B[a][b] = random.choice([-1, 1]) * random.uniform(0.2, 0.9)
+    print("B = ", B)
 
     return B
 
 
 # Generates a random vector of same size as matrix B
 def random_vector(p, B):
-    sDev = np.std(B)
+    # sDev = np.std(B)
 
     E = []
 
     for i in range(p):
-        E.append(random.uniform(0, sDev ** 2))
+        E.append(random.uniform(0, np.sqrt(random.uniform(1, 3))))
 
     return E
 

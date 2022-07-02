@@ -1,6 +1,6 @@
 import tetrad_cmd_algs as tc
 
-path = "/Users/pablopuiz/Desktop/test tetrad/14.txt"
+path = "~/PycharmProjects/algocompy/14.txt"
 
 print("pc", tc.pc(path, 0.05))
 print("fci", tc.fci(path, 0.05))

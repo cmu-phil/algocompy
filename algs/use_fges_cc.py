@@ -1,14 +1,10 @@
-from causallearn.search.ConstraintBased.PC import pc
-from causallearn.utils.cit import chisq, fisherz, gsq, kci, mv_fisherz
-import AdjacencyConfusion as AdjConf
-import ArrowConfusion as ArrConf
-import SHD as shd
-import myStatistics as stat
+from utils import AdjacencyConfusion as AdjConf, ArrowConfusion as ArrConf
 
-import tetrad_cmd_algs as tc
+import causalcmd.tetrad_cmd_algs as tc
 import pandas as pd
+from utils.SHD import SHD
 
-def PC(data, G):
+def FGES(data, G):
     """
     Runs PC algorithm with given data.
     Computes adjacency and Arrowhead confusion between estimated and true graph.
@@ -20,15 +16,24 @@ def PC(data, G):
 
     # testpc = pc(data, 0.01, fisherz, True, 0, -1).G
 
-    pd.DataFrame(data, columns=G.get_node_names()).to_csv("PC-INPUT.txt", sep="\t", index=False)
-    testpc = tc.pc("./PC-INPUT.txt", 0.01)
+    p = data.shape[1]
 
-    pcPerformance = PCstats(G, testpc)
+    X = []
+
+    for q in range(1,p + 1):
+        X.append('X' + str(q))
+
+    print(X)
+
+    pd.DataFrame(data, columns=X).to_csv("../PC-INPUT.txt", sep="\t", index=False)
+    testpc = tc.fges("../PC-INPUT.txt", 2)
+
+    pcPerformance = FGESstats(G, testpc)
 
     return pcPerformance
 
 
-def PCstats(G, testpc):
+def FGESstats(G, testpc):
     pcStat = []
 
     # Adjacency and Arrowhead
@@ -47,7 +52,7 @@ def PCstats(G, testpc):
     pcStat.append(ArrCpc.get_arrows_F1())
 
     # SHD
-    SHDpc = shd.SHD(G, testpc)
+    SHDpc = SHD(G, testpc)
 
     pcStat.append(SHDpc.get_shd())
 

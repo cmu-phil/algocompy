@@ -1,47 +1,50 @@
 import os
-
 from causallearn.utils.TXT2GeneralGraph import txt2generalgraph
 
 
 def pc(path, alpha):
-    os.system("java -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
+    os.system("rm tmp.txt;java -Xmx10g -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
               + "--algorithm pc "
               + "--data-type continuous "
               + "--dataset " + path + " "
               + "--test fisher-z-test "
               + "--delimiter tab "
               + "--alpha " + str(alpha) + " "
+              + "--verbose "
               + "--prefix tmp")
     return txt2generalgraph("tmp.txt")
 
 
 def fci(path, alpha):
-    os.system("java -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
+    os.system("rm tmp.txt;java -Xmx10g -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
               + "--algorithm fci "
               + "--data-type continuous "
               + "--dataset " + path + " "
               + "--test fisher-z-test "
               + "--delimiter tab  "
               + "--alpha " + str(alpha) + " "
+              + "--verbose "
               + "--prefix tmp")
     return txt2generalgraph("tmp.txt")
 
 
-def fges(path, penaltyDiscount):
-    os.system("java -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
+def fges(path, penalty_discount):
+    os.system("rm tmp.txt;java -Xmx10g -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
               + "--algorithm fges "
               + "--data-type continuous "
               + "--dataset " + path + " "
               + "--score sem-bic-score "
               + "--delimiter tab  "
               + "--precomputeCovariances "
-              + "--penaltyDiscount " + str(penaltyDiscount) + " "
-              + "--prefix tmp")
+              + "--penaltyDiscount " + str(penalty_discount) + " "
+              + "--verbose "
+              + "--prefix tmp "
+              + "--parallelized")
     return txt2generalgraph("tmp.txt")
 
 
-def grasp(path, penaltyDiscount):
-    os.system("java -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
+def grasp(path, penalty_discount):
+    os.system("rm tmp.txt;java -Xmx10g -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
               + "--algorithm grasp "
               + "--data-type continuous "
               + "--dataset " + path + " "
@@ -49,13 +52,14 @@ def grasp(path, penaltyDiscount):
               + "--test fisher-z-test "
               + "--delimiter tab  "
               + "--precomputeCovariances "
-              + "--penaltyDiscount " + str(penaltyDiscount) + " "
+              + "--penaltyDiscount " + str(penalty_discount) + " "
+              + "--verbose "
               + "--prefix tmp")
     return txt2generalgraph("tmp.txt")
 
 
-def graspfci(path, penaltyDiscount):
-    os.system("java -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
+def graspfci(path, penalty_discount):
+    os.system("rm tmp.txt;java -Xmx10g -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
               + "--algorithm graspfci "
               + "--data-type continuous "
               + "--dataset " + path + " "
@@ -63,13 +67,14 @@ def graspfci(path, penaltyDiscount):
               + "--test fisher-z-test "
               + "--delimiter tab  "
               + "--precomputeCovariances "
-              + "--penaltyDiscount " + str(penaltyDiscount) + " "
+              + "--penaltyDiscount " + str(penalty_discount) + " "
+              + "--verbose "
               + "--prefix tmp")
     return txt2generalgraph("tmp.txt")
 
 
-def boss_tuck(path, penaltyDiscount):
-    os.system("java -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
+def boss_tuck(path, penalty_discount):
+    os.system("rm tmp.txt;java -Xmx10g -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
               + "--experimental "
               + "--algorithm boss-tuck "
               + "--data-type continuous "
@@ -79,13 +84,14 @@ def boss_tuck(path, penaltyDiscount):
               + "--delimiter tab "
               + "--graspUseScore "
               + "--precomputeCovariances "
-              + "--penaltyDiscount " + str(penaltyDiscount) + " "
+              + "--penaltyDiscount " + str(penalty_discount) + " "
+              + "--verbose "
               + "--prefix tmp")
     return txt2generalgraph("tmp.txt")
 
 
-def boss(path, penaltyDiscount):
-    os.system("java -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
+def boss(path, penalty_discount):
+    os.system("rm tmp.txt;java -Xmx10g -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
               + "--experimental "
               + "--algorithm boss "
               + "--data-type continuous "
@@ -95,13 +101,14 @@ def boss(path, penaltyDiscount):
               + "--delimiter tab "
               + "--graspUseScore "
               + "--precomputeCovariances "
-              + "--penaltyDiscount " + str(penaltyDiscount) + " "
+              + "--penaltyDiscount " + str(penalty_discount) + " "
+              + "--verbose "
               + "--prefix tmp")
     return txt2generalgraph("tmp.txt")
 
 
-def rges(path, penaltyDiscount):
-    os.system("java -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
+def rges(path, penalty_discount):
+    os.system("rm tmp.txt;java -Xmx10g -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
               + "--experimental "
               + "--algorithm rges "
               + "--data-type continuous "
@@ -109,6 +116,7 @@ def rges(path, penaltyDiscount):
               + "--score sem-bic-score "
               + "--delimiter tab "
               + "--precomputeCovariances "
-              + "--penaltyDiscount " + str(penaltyDiscount) + " "
+              + "--penaltyDiscount " + str(penalty_discount) + " "
+              + "--verbose "
               + "--prefix tmp")
     return txt2generalgraph("tmp.txt")

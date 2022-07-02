@@ -1,84 +1,85 @@
 from datetime import datetime
-import myStatistics as stat
+
+from utils import my_statistics as stat
 
 
-def makefile (estG1, estG2):
-    with open("Comparison.txt", mode = "w") as c:
-
+def makefile(est_g1, est_g2, est_g3):
+    with open("Comparison.txt", mode="w") as c:
         dateandtime(c)
 
-        statInfo(c)
+        stat_info(c)
 
-        simInfo(c)
+        sim_info(c)
 
-        algInfo(c)
+        alg_info(c)
 
-        weightInfo(c)
+        weight_info(c)
 
         c.write("AVERAGE STATISTICS:")
 
-        tableHeader(c)
+        table_header(c)
         c.write('\n' + '\t')
         c.write('1' + '\t')
-        average(estG1, c)
+        average(est_g1, c)
         c.write('\n' + '\t')
         c.write('2' + '\t')
-        average(estG2, c)
+        average(est_g2, c)
         c.write('\n' + '\t')
         c.write('3' + '\t')
-        #average(estG3, c)
+        average(est_g3, c)
 
         c.write('\n' + '\n')
         c.write("STANDARD DEVIATION:")
 
-        tableHeader(c)
+        table_header(c)
         c.write('\n' + '\t')
         c.write('1' + '\t')
-        stDev(estG1, c)
+        st_dev(est_g1, c)
         c.write('\n' + '\t')
         c.write('2' + '\t')
-        stDev(estG2, c)
+        st_dev(est_g2, c)
         c.write('\n' + '\t')
         c.write('3' + '\t')
-        #stDev(estG3, c)
+        st_dev(est_g3, c)
 
         c.write('\n' + '\n')
         c.write("WORST CASE:")
 
-        tableHeader(c)
+        table_header(c)
         c.write('\n' + '\t')
         c.write('1' + '\t')
-        worstCase(estG1, c)
+        worst_case(est_g1, c)
         c.write('\n' + '\t')
         c.write('2' + '\t')
-        worstCase(estG2, c)
+        worst_case(est_g2, c)
         c.write('\n' + '\t')
         c.write('3' + '\t')
-        #worstCase(estG3, c)
+        worst_case(est_g3, c)
 
         c.write('\n' + '\n')
         c.write("MEDIAN CASE:")
 
-        tableHeader(c)
+        table_header(c)
         c.write('\n' + '\t')
         c.write('1' + '\t')
-        medianCase(estG1, c)
+        median_case(est_g1, c)
         c.write('\n' + '\t')
         c.write('2' + '\t')
-        medianCase(estG2, c)
+        median_case(est_g2, c)
         c.write('\n' + '\t')
         c.write('3' + '\t')
-        #medianCase(estG3, c)
+        median_case(est_g3, c)
 
 
-def dateandtime (c):
+def dateandtime(c):
     dt = datetime.now()
     dt_string = dt.strftime("%d/%m/%Y %H:%M:%S")
 
     c.write(dt_string)
     c.write('\n' + '\n')
 
-def statInfo (c):
+
+def stat_info(c):
     c.write('Statistics:')
     c.write('\n' + '\n')
     c.write('AP = Adjacency Precision\n')
@@ -93,51 +94,58 @@ def statInfo (c):
     c.write('E = Elapsed time in secinds\n')
     c.write('\n')
 
-def simInfo (c):
+
+def sim_info(c):
     c.write('Simulation:')
     c.write('\n' + '\n')
     c.write('**Write info here**')
     c.write('\n' + '\n')
 
-def algInfo (c):
+
+def alg_info(c):
     c.write('Algorithms:')
     c.write('\n' + '\n')
     c.write('1. PC' + '\n' + '2. FCI' + '\n' + '3. GES')
     c.write('\n' + '\n')
 
-def weightInfo (c):
+
+def weight_info(c):
     c.write('Weighting of Statistics:')
     c.write('\n' + '\n')
     c.write('**Write weighting here**')
     c.write('\n' + '\n')
 
-def tableHeader (c):
+
+def table_header(c):
     c.write('\n' + '\n')
     c.write('All edges')
     c.write('\n' + '\n')
     c.write('\tAlg   AP      AR     AHP   AHPCE     AHR   AHRCE   McAdj   McArr   F1Adj   F1Arr     SHD    E')
 
 
-def average(EstG, c):
-    GStat = stat.average(EstG)
-    for i in GStat:
+def average(est_g, c):
+    g_stat = stat.average(est_g)
+    for i in g_stat:
         m = stat.truncate(i, 2)
         c.write('%s\t' % m)
 
-def stDev(EstG, c):
-    GStat = stat.STdev(EstG)
-    for i in GStat:
+
+def st_dev(est_g, c):
+    g_stat = stat.STdev(est_g)
+    for i in g_stat:
         m = stat.truncate(i, 2)
         c.write('%s\t' % m)
 
-def worstCase(EstG, c):
-    GStat = stat.worstCase(EstG)
-    for i in GStat:
+
+def worst_case(est_g, c):
+    g_stat = stat.worstCase(est_g)
+    for i in g_stat:
         m = stat.truncate(i, 2)
         c.write('%s\t' % m)
 
-def medianCase(EstG, c):
-    GStat = stat.median(EstG)
-    for i in GStat:
+
+def median_case(est_g, c):
+    g_stat = stat.median(est_g)
+    for i in g_stat:
         m = stat.truncate(i, 2)
         c.write('%s\t' % m)

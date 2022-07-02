@@ -1,9 +1,6 @@
 from causallearn.search.ScoreBased.GES import ges
-from causallearn.utils.cit import chisq, fisherz, gsq, kci, mv_fisherz
-import AdjacencyConfusion as AdjConf
-import ArrowConfusion as ArrConf
-import SHD as shd
-import myStatistics as stat
+from utils import AdjacencyConfusion as AdjConf, ArrowConfusion as ArrConf
+from utils.SHD import SHD
 
 
 def GES(data, G):
@@ -47,7 +44,7 @@ def GESstats(G, testges):
     gesStat.append(ArrCges.get_arrows_F1())
 
     # SHD
-    SHDges = shd.SHD(G, testges)
+    SHDges = SHD(G, testges)
 
     gesStat.append(SHDges.get_shd())
 

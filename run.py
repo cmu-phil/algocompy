@@ -1,15 +1,12 @@
-import randomSample as sampler
-import truegraph as TG
-import use_PC
-import use_FCI
-import use_GES
+from algs import use_pc, use_pc_cc, use_grasp_cc
+from utils import true_graph as TG, random_sample as sampler
 import makefile as mf
-import tetrad_cmd_algs as tca
 
 def run():
-    p = 10
-    d = 0.25
-    N = 500
+    p = 20
+    a = 4
+    d = a / (p - 1)
+    N = 1000
     runnum = 10
     randomdata = True
 
@@ -23,17 +20,20 @@ def run():
 
             data, g = sampler.sample(p, d, N)
 
-            G0 = TG.TrueGraph(g, p, 0)
+            # G0 = TG.TrueGraph(g, p, 0)
             G1 = TG.TrueGraph(g, p, 1)
 
-            pcPerformance = use_PC.PC(data, G1)
+            pcPerformance = use_pc.PC(data, G1)
             EstG1.append(pcPerformance)
 
-            fciperformance = use_FCI.FCI(data, G1)
+            fciperformance = use_pc_cc.PC(data, G1)
             EstG2.append(fciperformance)
 
             # gesperformance = use_GES.GES(data, G0)
             # EstG3.append(gesperformance)
+
+            gesperformance = use_grasp_cc.GRASP(data, G1)
+            EstG3.append(gesperformance)
 
             i += 1
     #else:
@@ -43,7 +43,7 @@ def run():
     # np.savetxt('FCI-OUTPUT.txt', FCI, delimiter = '\t')
     # np.savetxt('GES-OUTPUT.txt', GES, delimiter = '\t')
 
-    mf.makefile(EstG1, EstG2)
+    mf.makefile(EstG1, EstG2, EstG3)
 
     print("------------------")
     print("------finish------")
