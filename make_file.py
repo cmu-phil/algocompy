@@ -117,7 +117,7 @@ def sim_info(c):
 def alg_info(c):
     c.write('Algorithms:')
     c.write('\n' + '\n')
-    c.write('1. PC' + '\n' + '2. PC_CC' + '\n' + '3. FGES_CC'  + '\n' + '3. GRaSP_CC')
+    c.write('1. PC_CL' + '\n' + '2. PC_CC' + '\n' + '3. FGES_CC' + '\n' + '3. GRaSP_CC')
     c.write('\n' + '\n')
 
 

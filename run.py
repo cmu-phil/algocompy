@@ -1,6 +1,6 @@
-from algs import use_pc, use_pc_cc, use_grasp_cc, use_fges_cc
+from algs import use_pc_cl, use_pc_cc, use_grasp_cc, use_fges_cc, use_ges_cl
 from utils import true_graph as TG, random_sample as sampler
-import makefile as mf
+import make_file as mf
 
 def run():
     p = 20
@@ -24,13 +24,13 @@ def run():
             # G0 = TG.TrueGraph(g, p, 0)
             G1 = TG.TrueGraph(g, p, 1)
 
-            pc_performance = use_pc.PC(data, G1)
+            pc_performance = use_pc_cl.PC(data, G1)
             est_g1.append(pc_performance)
 
             pc_cc_performance = use_pc_cc.PC(data, G1)
             est_g2.append(pc_cc_performance)
 
-            # gesperformance = use_GES.GES(data, G0)
+            # gesperformance = use_ges_cl.GES(data, G0)
             # EstG3.append(gesperformance)
 
             fges_cc_performance = use_fges_cc.FGES(data, G1)
