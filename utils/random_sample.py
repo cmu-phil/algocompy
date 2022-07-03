@@ -71,7 +71,7 @@ def random_matrix(p, g):
     for a in range(p):
         for b in range(p):
             if B[a][b] == 1:
-               B[a][b] = random.choice([-1, 1]) * random.uniform(0.2, 0.9)
+               B[a][b] = random.choice([-1, 1]) * random.uniform(0, 1)
     print("B = ", B)
 
     return B

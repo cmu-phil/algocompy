@@ -1,4 +1,4 @@
-from algs import use_pc, use_pc_cc, use_grasp_cc
+from algs import use_pc, use_pc_cc, use_grasp_cc, use_fges_cc
 from utils import true_graph as TG, random_sample as sampler
 import makefile as mf
 
@@ -8,13 +8,14 @@ def run():
     d = a / (p - 1)
     N = 1000
     runnum = 10
-    randomdata = True
+    random_data = True
 
-    EstG1 = []
-    EstG2 = []
-    EstG3 = []
+    est_g1 = []
+    est_g2 = []
+    est_g3 = []
+    est_g4 = []
 
-    if randomdata == True:
+    if random_data == True:
         for i in range(runnum):
             print("run number:", i+1)
 
@@ -23,17 +24,20 @@ def run():
             # G0 = TG.TrueGraph(g, p, 0)
             G1 = TG.TrueGraph(g, p, 1)
 
-            pcPerformance = use_pc.PC(data, G1)
-            EstG1.append(pcPerformance)
+            pc_performance = use_pc.PC(data, G1)
+            est_g1.append(pc_performance)
 
-            fciperformance = use_pc_cc.PC(data, G1)
-            EstG2.append(fciperformance)
+            pc_cc_performance = use_pc_cc.PC(data, G1)
+            est_g2.append(pc_cc_performance)
 
             # gesperformance = use_GES.GES(data, G0)
             # EstG3.append(gesperformance)
 
-            gesperformance = use_grasp_cc.GRASP(data, G1)
-            EstG3.append(gesperformance)
+            fges_cc_performance = use_fges_cc.FGES(data, G1)
+            est_g3.append(fges_cc_performance)
+
+            grasp_cc_performance = use_grasp_cc.GRASP(data, G1)
+            est_g4.append(grasp_cc_performance)
 
             i += 1
     #else:
@@ -43,7 +47,7 @@ def run():
     # np.savetxt('FCI-OUTPUT.txt', FCI, delimiter = '\t')
     # np.savetxt('GES-OUTPUT.txt', GES, delimiter = '\t')
 
-    mf.makefile(EstG1, EstG2, EstG3)
+    mf.make_file(est_g1, est_g2, est_g3, est_g4)
 
     print("------------------")
     print("------finish------")

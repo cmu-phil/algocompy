@@ -3,7 +3,7 @@ from datetime import datetime
 from utils import my_statistics as stat
 
 
-def makefile(est_g1, est_g2, est_g3):
+def make_file(est_g1, est_g2, est_g3, est_g4):
     with open("Comparison.txt", mode="w") as c:
         dateandtime(c)
 
@@ -27,6 +27,9 @@ def makefile(est_g1, est_g2, est_g3):
         c.write('\n' + '\t')
         c.write('3' + '\t')
         average(est_g3, c)
+        c.write('\n' + '\t')
+        c.write('4' + '\t')
+        average(est_g4, c)
 
         c.write('\n' + '\n')
         c.write("STANDARD DEVIATION:")
@@ -41,6 +44,9 @@ def makefile(est_g1, est_g2, est_g3):
         c.write('\n' + '\t')
         c.write('3' + '\t')
         st_dev(est_g3, c)
+        c.write('\n' + '\t')
+        c.write('4' + '\t')
+        st_dev(est_g4, c)
 
         c.write('\n' + '\n')
         c.write("WORST CASE:")
@@ -55,6 +61,9 @@ def makefile(est_g1, est_g2, est_g3):
         c.write('\n' + '\t')
         c.write('3' + '\t')
         worst_case(est_g3, c)
+        c.write('\n' + '\t')
+        c.write('4' + '\t')
+        worst_case(est_g4, c)
 
         c.write('\n' + '\n')
         c.write("MEDIAN CASE:")
@@ -69,6 +78,9 @@ def makefile(est_g1, est_g2, est_g3):
         c.write('\n' + '\t')
         c.write('3' + '\t')
         median_case(est_g3, c)
+        c.write('\n' + '\t')
+        c.write('4' + '\t')
+        median_case(est_g4, c)
 
 
 def dateandtime(c):
@@ -105,7 +117,7 @@ def sim_info(c):
 def alg_info(c):
     c.write('Algorithms:')
     c.write('\n' + '\n')
-    c.write('1. PC' + '\n' + '2. FCI' + '\n' + '3. GES')
+    c.write('1. PC' + '\n' + '2. PC_CC' + '\n' + '3. FGES_CC'  + '\n' + '3. GRaSP_CC')
     c.write('\n' + '\n')
 
 
