@@ -14,6 +14,19 @@ def pc(path, alpha):
               + "--prefix tmp")
     return txt2generalgraph("tmp.txt")
 
+def pcmax(path, alpha):
+    os.system("rm tmp.txt;java -Xmx10g -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
+              + "--default "
+              + "--algorithm pcmax "
+              + "--data-type continuous "
+              + "--dataset " + path + " "
+              + "--test fisher-z-test "
+              + "--delimiter tab "
+              + "--alpha " + str(alpha) + " "
+              + "--verbose "
+              + "--prefix tmp")
+    return txt2generalgraph("tmp.txt")
+
 def fci(path, alpha):
     os.system("rm tmp.txt;java -Xmx10g -jar causal-cmd-1.4.0-SNAPSHOT-jar-with-dependencies.jar "
               + "--default "
