@@ -1,5 +1,5 @@
 ================================================================================
-GRaSP (Sat, July 02, 2022 01:15:14 PM)
+GRaSP (Sun, July 03, 2022 10:35:16 AM)
 ================================================================================
 
 Runtime Parameters
@@ -23,87 +23,85 @@ score: Sem BIC Score
 
 Algorithm Parameters
 --------------------------------------------------------------------------------
-addOriginalDataset: no
+addOriginalDataset: yes
 alpha: 0.01
-cacheScores: no
+cacheScores: yes
 graspDepth: 4
 graspNonSingularDepth: 1
-graspOrderedAlg: no
+graspOrderedAlg: yes
 graspSingularDepth: 1
-graspUseDataOrder: no
+graspUseDataOrder: yes
 graspUseVermaPearl: no
-numStarts: 1
 numberResampling: 0
+numStarts: 1
 penaltyDiscount: 2
 percentResampleSize: 90
 precomputeCovariances: yes
 resamplingEnsemble: 1
-resamplingWithReplacement: no
+resamplingWithReplacement: yes
 semBicRule: 1
 semBicStructurePrior: 0.0
 timeLag: 0
 verbose: yes
 
 
-Sat, July 02, 2022 01:15:14 PM: Start data validation on file GRaSP-INPUT.txt.
-Sat, July 02, 2022 01:15:14 PM: End data validation on file GRaSP-INPUT.txt.
+Sun, July 03, 2022 10:35:16 AM: Start data validation on file GRaSP-INPUT.txt.
+Sun, July 03, 2022 10:35:16 AM: End data validation on file GRaSP-INPUT.txt.
 There are 1000 cases and 20 variables.
 
-Sat, July 02, 2022 01:15:14 PM: Start reading in file GRaSP-INPUT.txt.
-Sat, July 02, 2022 01:15:14 PM: Finished reading in file GRaSP-INPUT.txt.
-Sat, July 02, 2022 01:15:14 PM: File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+Sun, July 03, 2022 10:35:16 AM: Start reading in file GRaSP-INPUT.txt.
+Sun, July 03, 2022 10:35:16 AM: Finished reading in file GRaSP-INPUT.txt.
+Sun, July 03, 2022 10:35:16 AM: File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
 
-Start search: Sat, July 02, 2022 01:15:14 PM
+Start search: Sun, July 03, 2022 10:35:16 AM
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-End search: Sat, July 02, 2022 01:15:15 PM
+End search: Sun, July 03, 2022 10:35:16 AM
 
 ================================================================================
 Graph Nodes:
 X1;X2;X3;X4;X5;X6;X7;X8;X9;X10;X11;X12;X13;X14;X15;X16;X17;X18;X19;X20
 
 Graph Edges:
-1. X1 --> X11
-2. X1 --> X15
-3. X1 --> X18
-4. X10 --> X14
-5. X10 --> X20
-6. X11 --> X14
-7. X11 --> X16
-8. X11 --> X18
-9. X12 --> X18
-10. X13 --> X17
-11. X13 --> X19
-12. X13 --> X6
-13. X14 --> X20
-14. X15 --> X17
-15. X16 --> X18
-16. X2 --> X17
-17. X2 --> X18
-18. X2 --- X3
-19. X2 --> X7
-20. X4 --> X13
-21. X4 --> X16
-22. X4 --> X20
-23. X5 --- X12
-24. X5 --> X18
-25. X5 --> X7
-26. X6 --> X1
-27. X6 --> X10
-28. X6 --> X14
-29. X6 --> X15
-30. X6 --> X16
-31. X6 --> X17
-32. X7 --> X11
-33. X7 --> X13
-34. X7 --> X16
-35. X7 --> X18
-36. X7 --> X6
-37. X8 --> X10
-38. X8 --> X18
-39. X8 --> X19
-40. X9 --> X1
-41. X9 --> X13
+1. X1 --> X15
+2. X1 --> X6
+3. X10 --- X11
+4. X10 --> X20
+5. X11 --- X12
+6. X11 --> X17
+7. X11 --> X19
+8. X11 --> X20
+9. X12 --> X15
+10. X12 --> X20
+11. X14 --> X8
+12. X15 --> X16
+13. X15 --> X19
+14. X15 --> X20
+15. X2 --- X1
+16. X2 --- X10
+17. X2 --> X17
+18. X2 --- X7
+19. X2 --> X9
+20. X3 --> X16
+21. X3 --> X17
+22. X3 --> X6
+23. X4 --> X16
+24. X4 --> X20
+25. X4 --- X3
+26. X4 --- X5
+27. X5 --> X15
+28. X5 --> X17
+29. X5 --> X19
+30. X5 --> X9
+31. X6 --> X13
+32. X6 --> X18
+33. X6 --> X8
+34. X6 --> X9
+35. X8 --> X13
+36. X8 --> X15
+37. X8 --> X18
+38. X9 --> X16
+39. X9 --> X18
 
 Graph Attributes:
-score : 34139.9688
+score : 21596.2148

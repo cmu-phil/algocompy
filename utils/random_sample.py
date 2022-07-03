@@ -28,14 +28,14 @@ def sample(p, d, N):
     # print(E)
     # print("-----------------------")
     #
-    Sample = Linear_Gaussian(B, p, N)
+    sample = linear_gaussian(B, p, N)
 
     # permutation = np.random.permutation(Sample.shape[1])
     # g = g[permutation, permutation]
     # Sample = Sample[:, permutation]
 
     # Final print
-    return Sample, g
+    return sample, g
 
 
 # Generates my matrix but only contains 0 and 1
@@ -78,26 +78,24 @@ def random_matrix(p, g):
 
 
 # Generates a random vector of same size as matrix B
-def random_vector(p, B):
-    # sDev = np.std(B)
-
+def random_vector(p):
     E = []
 
     for i in range(p):
-        E.append(random.uniform(0, np.sqrt(random.uniform(1, 3))))
+        E.append(random.uniform(1, 3))
 
     return E
 
 
   # Generates the Linear Gaussian model
-def Linear_Gaussian(B, p, N):
+def linear_gaussian(B, p, N):
     I = np.identity(p)
-    Sample = np.zeros([N, p])
-    a = np.linalg.inv(I - B)
+    sample = np.zeros([N, p])
+    BInv = np.linalg.inv(I - B)
 
     for i in range(N):
-        E = random_vector(p, B)
-        b: ndarray = np.dot(a, E)
-        Sample[i:] = b
+        E = random_vector(p)
+        b: ndarray = np.dot(BInv, E)
+        sample[i:] = b
 
-    return Sample
+    return sample
