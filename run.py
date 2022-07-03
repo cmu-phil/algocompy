@@ -1,7 +1,7 @@
 import make_file as mf
-from algs import use_pc_cl, use_pc_cc, use_grasp_cc, use_fges_cc, use_pcmax_cc
+from algs import use_pc_cl, use_grasp_cc, use_fges_cc, use_pcmax_cc
 from utils import true_graph as tg, random_sample as sampler
-
+from algs import use_pc_cc
 
 def run():
     p = 20
@@ -29,7 +29,7 @@ def run():
             pc_performance = use_pc_cl.PC(data, g1)
             est_g1.append(pc_performance)
 
-            pc_cc_performance = use_pc_cc.PC(data, g1)
+            pc_cc_performance = use_pc_cc.use_pc_cc(data, g1).get_performance()
             est_g2.append(pc_cc_performance)
 
             pc_max_cc_performance = use_pcmax_cc.PCMAX(data, g1, True)

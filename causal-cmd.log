@@ -16015,3 +16015,723 @@
 2022-07-03 11:55:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
 2022-07-03 11:55:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
 2022-07-03 11:55:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:21 INFO  org.reflections.Reflections:219 - Reflections took 241 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:22 INFO  org.reflections.Reflections:219 - Reflections took 31 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:22 INFO  org.reflections.Reflections:219 - Reflections took 25 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:23 INFO  org.reflections.Reflections:219 - Reflections took 186 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:23 INFO  org.reflections.Reflections:219 - Reflections took 42 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:24 INFO  org.reflections.Reflections:219 - Reflections took 15 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:25 INFO  org.reflections.Reflections:219 - Reflections took 181 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:25 INFO  org.reflections.Reflections:219 - Reflections took 23 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:25 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:27 INFO  org.reflections.Reflections:219 - Reflections took 187 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:27 INFO  org.reflections.Reflections:219 - Reflections took 37 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:27 INFO  org.reflections.Reflections:219 - Reflections took 17 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:28 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:39:28 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:39:28 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:28 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:39:28 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:39:28 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:30 INFO  org.reflections.Reflections:219 - Reflections took 183 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:30 INFO  org.reflections.Reflections:219 - Reflections took 35 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:30 INFO  org.reflections.Reflections:219 - Reflections took 14 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:32 INFO  org.reflections.Reflections:219 - Reflections took 188 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:32 INFO  org.reflections.Reflections:219 - Reflections took 34 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:32 INFO  org.reflections.Reflections:219 - Reflections took 14 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:34 INFO  org.reflections.Reflections:219 - Reflections took 193 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:34 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:34 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:36 INFO  org.reflections.Reflections:219 - Reflections took 199 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:36 INFO  org.reflections.Reflections:219 - Reflections took 22 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:36 INFO  org.reflections.Reflections:219 - Reflections took 33 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:39:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:39:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:39:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:39:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:39 INFO  org.reflections.Reflections:219 - Reflections took 189 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:39 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:39 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:40 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:40 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:40 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:40 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:40 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:40 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:41 INFO  org.reflections.Reflections:219 - Reflections took 182 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:41 INFO  org.reflections.Reflections:219 - Reflections took 38 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:41 INFO  org.reflections.Reflections:219 - Reflections took 13 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:43 INFO  org.reflections.Reflections:219 - Reflections took 185 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:43 INFO  org.reflections.Reflections:219 - Reflections took 22 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:43 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:45 INFO  org.reflections.Reflections:219 - Reflections took 184 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:45 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:45 INFO  org.reflections.Reflections:219 - Reflections took 23 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:39:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:39:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:39:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:39:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:48 INFO  org.reflections.Reflections:219 - Reflections took 191 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:48 INFO  org.reflections.Reflections:219 - Reflections took 30 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:48 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:50 INFO  org.reflections.Reflections:219 - Reflections took 201 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:50 INFO  org.reflections.Reflections:219 - Reflections took 30 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:50 INFO  org.reflections.Reflections:219 - Reflections took 34 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:51 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:51 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:51 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:51 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:51 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:52 INFO  org.reflections.Reflections:219 - Reflections took 193 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:52 INFO  org.reflections.Reflections:219 - Reflections took 30 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:52 INFO  org.reflections.Reflections:219 - Reflections took 26 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:52 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:52 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:52 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:52 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:53 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:53 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:54 INFO  org.reflections.Reflections:219 - Reflections took 195 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:54 INFO  org.reflections.Reflections:219 - Reflections took 31 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:54 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:55 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:39:55 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:39:55 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:55 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:39:55 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:39:55 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:57 INFO  org.reflections.Reflections:219 - Reflections took 176 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:57 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:57 INFO  org.reflections.Reflections:219 - Reflections took 37 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:39:58 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:39:58 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:39:58 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:39:58 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:39:58 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:39:58 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:39:59 INFO  org.reflections.Reflections:219 - Reflections took 173 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:39:59 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:39:59 INFO  org.reflections.Reflections:219 - Reflections took 25 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:00 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:00 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:00 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:00 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:00 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:00 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:01 INFO  org.reflections.Reflections:219 - Reflections took 177 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:01 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:01 INFO  org.reflections.Reflections:219 - Reflections took 26 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:02 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:02 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:02 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:02 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:02 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:02 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:03 INFO  org.reflections.Reflections:219 - Reflections took 179 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:03 INFO  org.reflections.Reflections:219 - Reflections took 33 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:03 INFO  org.reflections.Reflections:219 - Reflections took 26 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:40:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:40:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:40:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:40:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:06 INFO  org.reflections.Reflections:219 - Reflections took 180 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:06 INFO  org.reflections.Reflections:219 - Reflections took 37 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:06 INFO  org.reflections.Reflections:219 - Reflections took 15 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:07 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:07 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:07 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:07 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:07 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:07 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:08 INFO  org.reflections.Reflections:219 - Reflections took 205 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:08 INFO  org.reflections.Reflections:219 - Reflections took 32 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:08 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:09 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:09 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:09 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:09 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:09 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:09 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:10 INFO  org.reflections.Reflections:219 - Reflections took 198 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:10 INFO  org.reflections.Reflections:219 - Reflections took 38 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:10 INFO  org.reflections.Reflections:219 - Reflections took 15 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:11 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:11 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:11 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:11 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:11 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:11 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:12 INFO  org.reflections.Reflections:219 - Reflections took 185 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:12 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:12 INFO  org.reflections.Reflections:219 - Reflections took 13 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:13 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:40:13 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:40:13 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:13 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:40:13 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:40:13 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:15 INFO  org.reflections.Reflections:219 - Reflections took 176 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:15 INFO  org.reflections.Reflections:219 - Reflections took 30 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:15 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:16 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:16 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:16 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:16 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:16 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:16 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:17 INFO  org.reflections.Reflections:219 - Reflections took 177 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:17 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:17 INFO  org.reflections.Reflections:219 - Reflections took 23 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:18 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:18 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:18 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:18 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:18 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:18 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:19 INFO  org.reflections.Reflections:219 - Reflections took 181 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:19 INFO  org.reflections.Reflections:219 - Reflections took 36 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:19 INFO  org.reflections.Reflections:219 - Reflections took 14 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:21 INFO  org.reflections.Reflections:219 - Reflections took 181 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:21 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:21 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:40:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:40:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:40:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:40:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:23 INFO  org.reflections.Reflections:219 - Reflections took 192 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:24 INFO  org.reflections.Reflections:219 - Reflections took 40 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:24 INFO  org.reflections.Reflections:219 - Reflections took 15 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:25 INFO  org.reflections.Reflections:219 - Reflections took 181 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:25 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:26 INFO  org.reflections.Reflections:219 - Reflections took 15 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:27 INFO  org.reflections.Reflections:219 - Reflections took 199 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:27 INFO  org.reflections.Reflections:219 - Reflections took 22 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:27 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:28 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:28 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:28 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:28 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:28 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:28 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:30 INFO  org.reflections.Reflections:219 - Reflections took 193 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:30 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:30 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:30 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:40:30 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:40:30 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:30 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:40:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:40:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:32 INFO  org.reflections.Reflections:219 - Reflections took 179 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:32 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:32 INFO  org.reflections.Reflections:219 - Reflections took 23 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:34 INFO  org.reflections.Reflections:219 - Reflections took 182 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:34 INFO  org.reflections.Reflections:219 - Reflections took 38 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:34 INFO  org.reflections.Reflections:219 - Reflections took 14 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:36 INFO  org.reflections.Reflections:219 - Reflections took 190 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:36 INFO  org.reflections.Reflections:219 - Reflections took 37 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:36 INFO  org.reflections.Reflections:219 - Reflections took 14 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:38 INFO  org.reflections.Reflections:219 - Reflections took 184 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:38 INFO  org.reflections.Reflections:219 - Reflections took 35 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:38 INFO  org.reflections.Reflections:219 - Reflections took 14 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:39 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:40:39 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:40:39 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:39 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:40:39 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:40:39 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:41 INFO  org.reflections.Reflections:219 - Reflections took 196 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:41 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:42 INFO  org.reflections.Reflections:219 - Reflections took 26 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:43 INFO  org.reflections.Reflections:219 - Reflections took 194 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:43 INFO  org.reflections.Reflections:219 - Reflections took 31 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:43 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:45 INFO  org.reflections.Reflections:219 - Reflections took 182 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:45 INFO  org.reflections.Reflections:219 - Reflections took 40 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:45 INFO  org.reflections.Reflections:219 - Reflections took 19 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:40:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:40:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:40:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:40:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:40:48 INFO  org.reflections.Reflections:219 - Reflections took 207 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:40:48 INFO  org.reflections.Reflections:219 - Reflections took 32 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:40:48 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:40:48 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:40:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:40:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:40:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:40:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:40:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:09 INFO  org.reflections.Reflections:219 - Reflections took 197 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:09 INFO  org.reflections.Reflections:219 - Reflections took 32 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:09 INFO  org.reflections.Reflections:219 - Reflections took 31 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:10 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:10 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:10 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:10 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:10 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:10 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:11 INFO  org.reflections.Reflections:219 - Reflections took 182 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:11 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:11 INFO  org.reflections.Reflections:219 - Reflections took 33 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:12 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:12 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:12 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:12 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:12 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:12 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:13 INFO  org.reflections.Reflections:219 - Reflections took 178 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:13 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:13 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:14 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:14 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:14 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:14 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:14 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:14 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:15 INFO  org.reflections.Reflections:219 - Reflections took 186 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:15 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:15 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:16 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:42:16 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:42:16 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:16 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:42:16 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:42:16 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:18 INFO  org.reflections.Reflections:219 - Reflections took 201 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:18 INFO  org.reflections.Reflections:219 - Reflections took 31 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:18 INFO  org.reflections.Reflections:219 - Reflections took 16 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:18 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:19 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:19 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:19 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:19 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:19 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:19 INFO  org.reflections.Reflections:219 - Reflections took 196 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:20 INFO  org.reflections.Reflections:219 - Reflections took 20 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:20 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:21 INFO  org.reflections.Reflections:219 - Reflections took 188 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:22 INFO  org.reflections.Reflections:219 - Reflections took 30 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:22 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:23 INFO  org.reflections.Reflections:219 - Reflections took 187 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:24 INFO  org.reflections.Reflections:219 - Reflections took 39 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:24 INFO  org.reflections.Reflections:219 - Reflections took 15 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:42:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:42:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:42:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:42:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:26 INFO  org.reflections.Reflections:219 - Reflections took 179 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:26 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:26 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:27 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:27 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:27 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:27 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:27 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:27 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:28 INFO  org.reflections.Reflections:219 - Reflections took 183 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:28 INFO  org.reflections.Reflections:219 - Reflections took 30 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:28 INFO  org.reflections.Reflections:219 - Reflections took 25 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:29 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:29 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:29 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:29 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:29 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:29 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:30 INFO  org.reflections.Reflections:219 - Reflections took 196 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:30 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:30 INFO  org.reflections.Reflections:219 - Reflections took 25 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:32 INFO  org.reflections.Reflections:219 - Reflections took 187 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:32 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:32 INFO  org.reflections.Reflections:219 - Reflections took 22 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:42:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:42:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:42:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:42:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:35 INFO  org.reflections.Reflections:219 - Reflections took 176 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:35 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:35 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:36 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:36 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:36 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:36 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:36 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:37 INFO  org.reflections.Reflections:219 - Reflections took 180 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:37 INFO  org.reflections.Reflections:219 - Reflections took 31 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:37 INFO  org.reflections.Reflections:219 - Reflections took 23 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:37 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:38 INFO  org.reflections.Reflections:219 - Reflections took 179 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:39 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:39 INFO  org.reflections.Reflections:219 - Reflections took 14 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:39 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:39 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:39 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:39 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:39 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:39 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:41 INFO  org.reflections.Reflections:219 - Reflections took 179 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:41 INFO  org.reflections.Reflections:219 - Reflections took 33 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:41 INFO  org.reflections.Reflections:219 - Reflections took 26 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:41 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:42:41 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:42:41 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:41 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:42:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:42:42 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:44 INFO  org.reflections.Reflections:219 - Reflections took 194 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:44 INFO  org.reflections.Reflections:219 - Reflections took 40 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:44 INFO  org.reflections.Reflections:219 - Reflections took 16 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:44 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:45 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:45 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:45 INFO  org.reflections.Reflections:219 - Reflections took 192 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:46 INFO  org.reflections.Reflections:219 - Reflections took 40 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:46 INFO  org.reflections.Reflections:219 - Reflections took 14 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:47 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:47 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:48 INFO  org.reflections.Reflections:219 - Reflections took 191 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:48 INFO  org.reflections.Reflections:219 - Reflections took 38 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:48 INFO  org.reflections.Reflections:219 - Reflections took 22 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:48 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:48 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:48 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:48 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:49 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:50 INFO  org.reflections.Reflections:219 - Reflections took 192 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:50 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:50 INFO  org.reflections.Reflections:219 - Reflections took 25 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:42:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:42:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:42:51 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:42:51 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:52 INFO  org.reflections.Reflections:219 - Reflections took 176 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:52 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:52 INFO  org.reflections.Reflections:219 - Reflections took 23 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:53 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:53 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:53 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:53 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:53 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:53 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:54 INFO  org.reflections.Reflections:219 - Reflections took 168 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:54 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:54 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:55 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:55 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:55 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:55 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:55 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:55 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:56 INFO  org.reflections.Reflections:219 - Reflections took 176 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:56 INFO  org.reflections.Reflections:219 - Reflections took 26 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:56 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:57 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:42:57 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:42:57 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:57 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:42:57 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:42:57 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:42:58 INFO  org.reflections.Reflections:219 - Reflections took 184 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:42:58 INFO  org.reflections.Reflections:219 - Reflections took 38 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:42:58 INFO  org.reflections.Reflections:219 - Reflections took 21 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:42:59 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:42:59 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:42:59 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:42:59 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:42:59 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:42:59 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:01 INFO  org.reflections.Reflections:219 - Reflections took 181 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:01 INFO  org.reflections.Reflections:219 - Reflections took 21 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:01 INFO  org.reflections.Reflections:219 - Reflections took 27 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:02 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:43:02 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:43:02 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:02 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:43:02 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:43:02 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:03 INFO  org.reflections.Reflections:219 - Reflections took 182 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:03 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:03 INFO  org.reflections.Reflections:219 - Reflections took 16 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:43:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:43:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:43:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:43:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:05 INFO  org.reflections.Reflections:219 - Reflections took 179 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:05 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:05 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:06 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:43:06 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:43:06 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:06 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:43:06 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:43:06 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:07 INFO  org.reflections.Reflections:219 - Reflections took 180 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:07 INFO  org.reflections.Reflections:219 - Reflections took 21 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:07 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:08 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:43:08 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:43:08 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:08 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:43:08 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:43:08 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:10 INFO  org.reflections.Reflections:219 - Reflections took 175 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:10 INFO  org.reflections.Reflections:219 - Reflections took 30 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:10 INFO  org.reflections.Reflections:219 - Reflections took 26 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:11 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:43:11 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:43:11 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:11 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:43:11 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:43:11 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:12 INFO  org.reflections.Reflections:219 - Reflections took 180 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:12 INFO  org.reflections.Reflections:219 - Reflections took 31 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:12 INFO  org.reflections.Reflections:219 - Reflections took 12 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:13 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:43:13 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:43:13 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:13 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:43:13 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:43:13 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:14 INFO  org.reflections.Reflections:219 - Reflections took 184 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:14 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:14 INFO  org.reflections.Reflections:219 - Reflections took 31 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:15 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:43:15 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:43:15 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:15 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:43:15 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:43:15 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:16 INFO  org.reflections.Reflections:219 - Reflections took 178 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:16 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:16 INFO  org.reflections.Reflections:219 - Reflections took 22 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:43:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:43:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:43:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:43:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:19 INFO  org.reflections.Reflections:219 - Reflections took 192 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:19 INFO  org.reflections.Reflections:219 - Reflections took 24 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:19 INFO  org.reflections.Reflections:219 - Reflections took 22 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:43:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:43:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:43:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:43:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:21 INFO  org.reflections.Reflections:219 - Reflections took 186 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:21 INFO  org.reflections.Reflections:219 - Reflections took 29 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:21 INFO  org.reflections.Reflections:219 - Reflections took 15 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:43:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:43:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:43:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:43:22 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:23 INFO  org.reflections.Reflections:219 - Reflections took 176 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:23 INFO  org.reflections.Reflections:219 - Reflections took 32 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:23 INFO  org.reflections.Reflections:219 - Reflections took 28 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:43:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:43:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:43:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:43:24 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:25 INFO  org.reflections.Reflections:219 - Reflections took 183 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:25 INFO  org.reflections.Reflections:219 - Reflections took 25 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:25 INFO  org.reflections.Reflections:219 - Reflections took 22 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:43:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:43:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:43:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:43:26 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:28 INFO  org.reflections.Reflections:219 - Reflections took 191 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:28 INFO  org.reflections.Reflections:219 - Reflections took 34 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:28 INFO  org.reflections.Reflections:219 - Reflections took 18 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:29 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:43:29 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:43:29 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:29 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:43:29 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:43:29 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:30 INFO  org.reflections.Reflections:219 - Reflections took 193 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:30 INFO  org.reflections.Reflections:219 - Reflections took 30 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:30 INFO  org.reflections.Reflections:219 - Reflections took 25 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:43:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:43:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:43:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:43:31 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:32 INFO  org.reflections.Reflections:219 - Reflections took 199 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:32 INFO  org.reflections.Reflections:219 - Reflections took 46 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:32 INFO  org.reflections.Reflections:219 - Reflections took 15 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:32 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file PC-INPUT.txt.
+2022-07-03 12:43:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file PC-INPUT.txt.
+2022-07-03 12:43:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file PC-INPUT.txt.
+2022-07-03 12:43:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file PC-INPUT.txt.
+2022-07-03 12:43:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File PC-INPUT.txt contains 1000 cases, 20 variables.
+2022-07-03 12:43:34 INFO  org.reflections.Reflections:219 - Reflections took 194 ms to scan 1 urls, producing 15 keys and 294 values
+2022-07-03 12:43:34 INFO  org.reflections.Reflections:219 - Reflections took 36 ms to scan 1 urls, producing 8 keys and 45 values
+2022-07-03 12:43:34 INFO  org.reflections.Reflections:219 - Reflections took 11 ms to scan 1 urls, producing 8 keys and 40 values
+2022-07-03 12:43:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:43:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file GRaSP-INPUT.txt.
+2022-07-03 12:43:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 1000 cases and 20 variables.
+2022-07-03 12:43:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file GRaSP-INPUT.txt.
+2022-07-03 12:43:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file GRaSP-INPUT.txt.
+2022-07-03 12:43:35 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
