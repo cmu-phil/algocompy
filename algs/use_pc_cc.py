@@ -8,7 +8,7 @@ from utils.SHD import SHD
 class use_pc_cc:
     def __init__(self, data, true_graph):
         """
-        Runs PC algorithm with given data.
+        Runs PC algorithm with given data .
         Computes adjacency and Arrowhead confusion between estimated and true graph.
         Saves results into matrix.
         -----------
@@ -34,7 +34,7 @@ class use_pc_cc:
         return self.pc_performance
 
     def get_alg_name(self):
-        return "PC"
+        return "PC_CL"
 
     def stats(self, g_true, g_est):
         stats = []
