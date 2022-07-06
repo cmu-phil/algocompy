@@ -28,34 +28,34 @@ def GRASP(data, G):
     print(X)
 
     pd.DataFrame(data, columns=X).to_csv("../GRaSP-INPUT.txt", sep="\t", index=False)
-    testpc = tc.grasp("../GRaSP-INPUT.txt", 2)
+    testgrasp = tc.grasp("../GRaSP-INPUT.txt", 2)
 
-    pcPerformance = GRaSPstats(G, testpc)
+    graspPerformance = GRaSPstats(G, testgrasp)
 
-    return pcPerformance
+    return graspPerformance
 
 
-def GRaSPstats(G, testpc):
-    pcStat = []
+def GRaSPstats(G, testgrasp):
+    graspStat = []
 
     # Adjacency and Arrowhead
-    ACpc = AdjConf.AdjacencyConfusion(G, testpc)
-    ArrCpc = ArrConf.ArrowConfusion(G, testpc)
+    ACgrasp = AdjConf.AdjacencyConfusion(G, testgrasp)
+    ArrCgrasp = ArrConf.ArrowConfusion(G, testgrasp)
 
-    pcStat.append(ACpc.get_adj_precision())
-    pcStat.append(ACpc.get_adj_recall())
-    pcStat.append(ArrCpc.get_arrows_precision())
-    pcStat.append(ArrCpc.get_arrows_precision_ce())
-    pcStat.append(ArrCpc.get_arrows_recall())
-    pcStat.append(ArrCpc.get_arrows_recall_ce())
-    pcStat.append(ACpc.get_adj_Mc())
-    pcStat.append(ArrCpc.get_arrows_Mc())
-    pcStat.append(ACpc.get_adj_F1())
-    pcStat.append(ArrCpc.get_arrows_F1())
+    graspStat.append(ACgrasp.get_adj_precision())
+    graspStat.append(ACgrasp.get_adj_recall())
+    graspStat.append(ArrCgrasp.get_arrows_precision())
+    graspStat.append(ArrCgrasp.get_arrows_precision_ce())
+    graspStat.append(ArrCgrasp.get_arrows_recall())
+    graspStat.append(ArrCgrasp.get_arrows_recall_ce())
+    graspStat.append(ACgrasp.get_adj_Mc())
+    graspStat.append(ArrCgrasp.get_arrows_Mc())
+    graspStat.append(ACgrasp.get_adj_F1())
+    graspStat.append(ArrCgrasp.get_arrows_F1())
 
     # SHD
-    SHDpc = SHD(G, testpc)
+    SHDgrasp = SHD(G, testgrasp)
 
-    pcStat.append(SHDpc.get_shd())
+    graspStat.append(SHDgrasp.get_shd())
 
-    return pcStat
+    return graspStat

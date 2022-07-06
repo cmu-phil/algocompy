@@ -3,7 +3,7 @@ from datetime import datetime
 from utils import my_statistics as stat
 
 
-def make_file(est_g1, est_g2, est_g3, est_g4, est_g5):
+def make_file(est_g1, est_g2, est_g3, est_g4, est_g5, est_g6, est_g7):
     with open("Comparison.txt", mode="w") as c:
         dateandtime(c)
 
@@ -31,8 +31,14 @@ def make_file(est_g1, est_g2, est_g3, est_g4, est_g5):
         c.write('4' + '\t')
         average(est_g4, c)
         c.write('\n' + '\t')
-        c.write('4' + '\t')
+        c.write('5' + '\t')
         average(est_g5, c)
+        c.write('\n' + '\t')
+        c.write('6' + '\t')
+        average(est_g6, c)
+        c.write('\n' + '\t')
+        c.write('7' + '\t')
+        average(est_g7, c)
 
         c.write('\n' + '\n')
         c.write("STANDARD DEVIATION:")
@@ -53,6 +59,12 @@ def make_file(est_g1, est_g2, est_g3, est_g4, est_g5):
         c.write('\n' + '\t')
         c.write('5' + '\t')
         st_dev(est_g5, c)
+        c.write('\n' + '\t')
+        c.write('6' + '\t')
+        st_dev(est_g6, c)
+        c.write('\n' + '\t')
+        c.write('7' + '\t')
+        st_dev(est_g7, c)
 
         c.write('\n' + '\n')
         c.write("WORST CASE:")
@@ -73,6 +85,12 @@ def make_file(est_g1, est_g2, est_g3, est_g4, est_g5):
         c.write('\n' + '\t')
         c.write('4' + '\t')
         worst_case(est_g5, c)
+        c.write('\n' + '\t')
+        c.write('6' + '\t')
+        worst_case(est_g6, c)
+        c.write('\n' + '\t')
+        c.write('7' + '\t')
+        worst_case(est_g7, c)
 
         c.write('\n' + '\n')
         c.write("MEDIAN CASE:")
@@ -93,6 +111,12 @@ def make_file(est_g1, est_g2, est_g3, est_g4, est_g5):
         c.write('\n' + '\t')
         c.write('4' + '\t')
         median_case(est_g5, c)
+        c.write('\n' + '\t')
+        c.write('6' + '\t')
+        median_case(est_g6, c)
+        c.write('\n' + '\t')
+        c.write('7' + '\t')
+        median_case(est_g7, c)
 
 
 def dateandtime(c):
@@ -129,7 +153,7 @@ def sim_info(c):
 def alg_info(c):
     c.write('Algorithms:')
     c.write('\n' + '\n')
-    c.write('1. PC_CL' + '\n' + '2. PC_CC' + '\n' + '3. PCMAX_CC' + '\n' + '4. FGES_CC' + '\n' + '5. GRaSP_CC')
+    c.write('1. PC_CL' + '\n' + '2. PC_CC' + '\n' + '3. PCMAX_CC' + '\n' + '4. GES_CL' + '\n' + '5. FGES_CC' + '\n' + '6. FCI_CL' + '\n' + '7. GRASP_CC' + '\n' + '8. GIN_CL')
     c.write('\n' + '\n')
 
 

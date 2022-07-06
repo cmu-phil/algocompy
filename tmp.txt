@@ -1,5 +1,5 @@
 ================================================================================
-GRaSP (Sun, July 03, 2022 12:43:35 PM)
+GRaSP (Wed, July 06, 2022 03:46:11 PM)
 ================================================================================
 
 Runtime Parameters
@@ -45,57 +45,41 @@ timeLag: 0
 verbose: yes
 
 
-Sun, July 03, 2022 12:43:35 PM: Start data validation on file GRaSP-INPUT.txt.
-Sun, July 03, 2022 12:43:35 PM: End data validation on file GRaSP-INPUT.txt.
-There are 1000 cases and 20 variables.
+Wed, July 06, 2022 03:46:11 PM: Start data validation on file GRaSP-INPUT.txt.
+Wed, July 06, 2022 03:46:11 PM: End data validation on file GRaSP-INPUT.txt.
+There are 500 cases and 10 variables.
 
-Sun, July 03, 2022 12:43:35 PM: Start reading in file GRaSP-INPUT.txt.
-Sun, July 03, 2022 12:43:35 PM: Finished reading in file GRaSP-INPUT.txt.
-Sun, July 03, 2022 12:43:35 PM: File GRaSP-INPUT.txt contains 1000 cases, 20 variables.
+Wed, July 06, 2022 03:46:11 PM: Start reading in file GRaSP-INPUT.txt.
+Wed, July 06, 2022 03:46:11 PM: Finished reading in file GRaSP-INPUT.txt.
+Wed, July 06, 2022 03:46:11 PM: File GRaSP-INPUT.txt contains 500 cases, 10 variables.
 
-Start search: Sun, July 03, 2022 12:43:35 PM
+Start search: Wed, July 06, 2022 03:46:11 PM
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-End search: Sun, July 03, 2022 12:43:35 PM
+End search: Wed, July 06, 2022 03:46:11 PM
 
 ================================================================================
 Graph Nodes:
-X1;X2;X3;X4;X5;X6;X7;X8;X9;X10;X11;X12;X13;X14;X15;X16;X17;X18;X19;X20
+X1;X2;X3;X4;X5;X6;X7;X8;X9;X10
 
 Graph Edges:
-1. X1 --> X13
-2. X10 --> X12
-3. X10 --> X13
-4. X10 --> X20
-5. X11 --> X14
-6. X11 --> X15
-7. X11 --> X17
-8. X12 --> X19
-9. X13 --> X15
-10. X13 --> X17
-11. X14 --> X18
-12. X14 --> X20
-13. X15 --> X16
-14. X16 --> X17
-15. X16 --> X18
-16. X18 --> X20
-17. X19 --> X20
-18. X2 --> X10
-19. X2 --- X4
-20. X3 --- X1
-21. X3 --> X12
-22. X3 --> X19
-23. X4 --> X10
-24. X5 --> X10
-25. X5 --> X11
-26. X5 --> X13
-27. X6 --> X10
-28. X6 --> X17
-29. X6 --> X5
-30. X7 --> X12
-31. X7 --> X5
-32. X8 --> X12
-33. X9 --> X12
+1. X1 --> X10
+2. X1 --- X2
+3. X1 --> X6
+4. X2 --> X6
+5. X2 --> X8
+6. X3 --- X1
+7. X3 --> X10
+8. X3 --> X6
+9. X4 --- X3
+10. X4 --- X5
+11. X5 --> X10
+12. X5 --> X7
+13. X6 --> X7
+14. X6 --> X8
+15. X7 --> X10
+16. X8 --> X10
+17. X9 --- X4
 
 Graph Attributes:
-score : 21355.8359
+score : 5195.8867

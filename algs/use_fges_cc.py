@@ -26,34 +26,34 @@ def FGES(data, G):
     print(X)
 
     pd.DataFrame(data, columns=X).to_csv("../PC-INPUT.txt", sep="\t", index=False)
-    testpc = tc.fges("../PC-INPUT.txt", 2)
+    testfges = tc.fges("../PC-INPUT.txt", 2)
 
-    pcPerformance = FGESstats(G, testpc)
+    pcPerformance = FGESstats(G, testfges)
 
     return pcPerformance
 
 
-def FGESstats(G, testpc):
-    pcStat = []
+def FGESstats(G, testfges):
+    fgesStat = []
 
     # Adjacency and Arrowhead
-    ACpc = AdjConf.AdjacencyConfusion(G, testpc)
-    ArrCpc = ArrConf.ArrowConfusion(G, testpc)
+    ACfges = AdjConf.AdjacencyConfusion(G, testfges)
+    ArrCfges = ArrConf.ArrowConfusion(G, testfges)
 
-    pcStat.append(ACpc.get_adj_precision())
-    pcStat.append(ACpc.get_adj_recall())
-    pcStat.append(ArrCpc.get_arrows_precision())
-    pcStat.append(ArrCpc.get_arrows_precision_ce())
-    pcStat.append(ArrCpc.get_arrows_recall())
-    pcStat.append(ArrCpc.get_arrows_recall_ce())
-    pcStat.append(ACpc.get_adj_Mc())
-    pcStat.append(ArrCpc.get_arrows_Mc())
-    pcStat.append(ACpc.get_adj_F1())
-    pcStat.append(ArrCpc.get_arrows_F1())
+    fgesStat.append(ACfges.get_adj_precision())
+    fgesStat.append(ACfges.get_adj_recall())
+    fgesStat.append(ArrCfges.get_arrows_precision())
+    fgesStat.append(ArrCfges.get_arrows_precision_ce())
+    fgesStat.append(ArrCfges.get_arrows_recall())
+    fgesStat.append(ArrCfges.get_arrows_recall_ce())
+    fgesStat.append(ACfges.get_adj_Mc())
+    fgesStat.append(ArrCfges.get_arrows_Mc())
+    fgesStat.append(ACfges.get_adj_F1())
+    fgesStat.append(ArrCfges.get_arrows_F1())
 
     # SHD
-    SHDpc = SHD(G, testpc)
+    SHDfges = SHD(G, testfges)
 
-    pcStat.append(SHDpc.get_shd())
+    fgesStat.append(SHDfges.get_shd())
 
-    return pcStat
+    return fgesStat

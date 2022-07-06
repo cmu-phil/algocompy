@@ -26,8 +26,8 @@ def FCIstats(G, testfci):
     fciStat = []
 
     # Adjacency and Arrowhead
-    ACfci = AdjConf.AdjacencyConfusion(G, testfci)
-    ArrCfci = ArrConf.ArrowConfusion(G, testfci)
+    ACfci = AdjConf.AdjacencyConfusion(G, testfci[0])
+    ArrCfci = ArrConf.ArrowConfusion(G, testfci[0])
 
     fciStat.append(ACfci.get_adj_precision())
     fciStat.append(ACfci.get_adj_recall())
@@ -41,7 +41,7 @@ def FCIstats(G, testfci):
     fciStat.append(ArrCfci.get_arrows_F1())
 
     # SHD
-    SHDfci = SHD(G, testfci)
+    SHDfci = SHD(G, testfci[0])
 
     fciStat.append(SHDfci.get_shd())
 
