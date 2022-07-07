@@ -1,5 +1,5 @@
 ================================================================================
-GRaSP (Wed, July 06, 2022 03:46:11 PM)
+PC-Max (Thu, July 07, 2022 02:35:12 PM)
 ================================================================================
 
 Runtime Parameters
@@ -8,7 +8,7 @@ number of threads: 7
 
 Dataset
 --------------------------------------------------------------------------------
-file: GRaSP-INPUT.txt
+file: PC-INPUT.txt
 header: yes
 delimiter: tab
 quote char: none
@@ -17,69 +17,53 @@ comment marker: none
 
 Algorithm Run
 --------------------------------------------------------------------------------
-algorithm: GRaSP
+algorithm: PC-Max
 test of independence: Fisher Z Test
-score: Sem BIC Score
 
 Algorithm Parameters
 --------------------------------------------------------------------------------
 addOriginalDataset: yes
 alpha: 0.01
-cacheScores: yes
-graspDepth: 4
-graspNonSingularDepth: 1
-graspOrderedAlg: yes
-graspSingularDepth: 1
-graspUseDataOrder: yes
-graspUseVermaPearl: no
+concurrentFAS: no
+conflictRule: 3
+depth: -1
+fasHeuristic: 1
+maxPOrientationMaxPathLength: 3
 numberResampling: 0
-numStarts: 1
-penaltyDiscount: 2
 percentResampleSize: 90
-precomputeCovariances: yes
 resamplingEnsemble: 1
 resamplingWithReplacement: yes
-semBicRule: 1
-semBicStructurePrior: 0.0
+stableFAS: yes
 timeLag: 0
+useMaxPOrientationHeuristic: no
 verbose: yes
 
 
-Wed, July 06, 2022 03:46:11 PM: Start data validation on file GRaSP-INPUT.txt.
-Wed, July 06, 2022 03:46:11 PM: End data validation on file GRaSP-INPUT.txt.
+Thu, July 07, 2022 02:35:12 PM: Start data validation on file PC-INPUT.txt.
+Thu, July 07, 2022 02:35:12 PM: End data validation on file PC-INPUT.txt.
 There are 500 cases and 10 variables.
 
-Wed, July 06, 2022 03:46:11 PM: Start reading in file GRaSP-INPUT.txt.
-Wed, July 06, 2022 03:46:11 PM: Finished reading in file GRaSP-INPUT.txt.
-Wed, July 06, 2022 03:46:11 PM: File GRaSP-INPUT.txt contains 500 cases, 10 variables.
+Thu, July 07, 2022 02:35:12 PM: Start reading in file PC-INPUT.txt.
+Thu, July 07, 2022 02:35:12 PM: Finished reading in file PC-INPUT.txt.
+Thu, July 07, 2022 02:35:12 PM: File PC-INPUT.txt contains 500 cases, 10 variables.
 
-Start search: Wed, July 06, 2022 03:46:11 PM
+Start search: Thu, July 07, 2022 02:35:12 PM
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-End search: Wed, July 06, 2022 03:46:11 PM
+End search: Thu, July 07, 2022 02:35:12 PM
 
 ================================================================================
 Graph Nodes:
 X1;X2;X3;X4;X5;X6;X7;X8;X9;X10
 
 Graph Edges:
-1. X1 --> X10
-2. X1 --- X2
-3. X1 --> X6
-4. X2 --> X6
-5. X2 --> X8
-6. X3 --- X1
-7. X3 --> X10
-8. X3 --> X6
-9. X4 --- X3
-10. X4 --- X5
-11. X5 --> X10
-12. X5 --> X7
-13. X6 --> X7
-14. X6 --> X8
-15. X7 --> X10
-16. X8 --> X10
-17. X9 --- X4
-
-Graph Attributes:
-score : 5195.8867
+1. X1 --- X10
+2. X1 --- X4
+3. X2 --- X3
+4. X2 --> X5
+5. X4 --- X10
+6. X4 --> X5
+7. X4 --- X9
+8. X5 --> X6
+9. X5 --> X7
+10. X6 --> X8

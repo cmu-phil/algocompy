@@ -28,9 +28,9 @@ def FGES(data, G):
     pd.DataFrame(data, columns=X).to_csv("../PC-INPUT.txt", sep="\t", index=False)
     testfges = tc.fges("../PC-INPUT.txt", 2)
 
-    pcPerformance = FGESstats(G, testfges)
+    fgesPerformance = FGESstats(G, testfges)
 
-    return pcPerformance
+    return fgesPerformance
 
 
 def FGESstats(G, testfges):
