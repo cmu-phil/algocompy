@@ -39,11 +39,11 @@ def run():
             pc_max_cc_performance = use_pcmax_cc.PCMAX(data, g1, True)
             est_g3.append(pc_max_cc_performance)
 
-            # gesperformance = use_ges_cl.GES(data, g0)
-            # est_g4.append(gesperformance)
+            gesperformance = use_ges_cl.GES(data, g0)
+            est_g4.append(gesperformance)
 
-            grangerperformance = use_granger_cl.granger(data, g1)
-            est_g4.append(grangerperformance)
+            # grangerperformance = use_granger_cl.granger(data, g1)
+            # est_g4.append(grangerperformance)
 
             fges_cc_performance = use_fges_cc.FGES(data, g1)
             est_g5.append(fges_cc_performance)
