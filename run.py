@@ -1,66 +1,63 @@
+from os import stat
+from xml.etree.ElementTree import tostring
 from matplotlib.style import use
 from algs.use_pc_cc import use_pc_cc
-import make_file as mf
-from algs import use_fci_cl, use_fges_cc, use_pc_cc, use_ges_cl, use_grasp_cc, use_pc_cl, use_pcmax_cc, use_granger_cl
+import make_comparison as mc
+from algs import task, use_fci_cl, use_fges_cc, use_pc_cc, use_ges_cl, use_grasp_cc, use_pc_cl, use_pcmax_cc
 from utils import true_graph as tg, random_sample as sampler
+import numpy as np
+from utils import my_statistics as stat
 
 def run():
-    p = 10
-    a = 4
-    d = a / (p - 1)
-    n = 500
-    runnum = 5
-    random_data = True
+    reps = 2
 
-    est_g1 = []
-    est_g2 = []
-    est_g3 = []
-    est_g4 = []
-    est_g5 = []
-    est_g6 = []
-    est_g7 = []
-    est_g8 = []
+    num_var = [10, 20]
+    avg_deg = [2, 4]
+    num_samp = [1e3, 1e4]
 
-    if random_data:
-        for i in range(runnum):
-            print("run number:", i + 1)
+    save_data = False
 
-            data, g = sampler.sample(p, d, n)
+    algs = []
+    algs.append(task.task(use_pc_cl.use_pc_cl(), 1))
+    algs.append(task.task(use_pc_cc.use_pc_cc(), 2))
+    algs.append(task.task(use_pcmax_cc.use_pcmax_cc(), 3))
+    algs.append(task.task(use_fges_cc.use_fges_cc(), 4))
+    algs.append(task.task(use_fci_cl.use_fci_cl(), 5))
+    algs.append(task.task(use_grasp_cc.use_grasp_cc(), 6))
 
-            g0 = tg.TrueGraph(g, p, 0)
-            g1 = tg.TrueGraph(g, p, 1)
 
-            pc_performance = use_pc_cl.PC(data, g1)
-            est_g1.append(pc_performance)
+    results = {}
+    for alg in algs:
+        results[alg.get_id()] = {}
 
-            pc_cc_performance = use_pc_cc.use_pc_cc(data, g1).get_performance()
-            est_g2.append(pc_cc_performance)
+    for p in num_var:
+        for a in avg_deg:
+            d = a / (p - 1)
+            for n in num_samp:
+                for rep in range(reps):
+                    data, g = sampler.sample(p, d, n)
+                    if save_data == True:
+                        np.savetxt(str() + '_sample.txt', data, delimiter = '\t')
+                    g1 = tg.TrueGraph(g, p, 1)
+                    for alg in algs:
+                        key = (p,a,n)
+                        if rep == 0: results[alg.get_id()][key] = []
+                        results[alg.get_id()][key].append(alg.run(data, g1))
 
-            pc_max_cc_performance = use_pcmax_cc.PCMAX(data, g1, True)
-            est_g3.append(pc_max_cc_performance)
 
-            gesperformance = use_ges_cl.GES(data, g0)
-            est_g4.append(gesperformance)
 
-            # grangerperformance = use_granger_cl.granger(data, g1)
-            # est_g4.append(grangerperformance)
+    mc.make_comparison(results, algs)
 
-            fges_cc_performance = use_fges_cc.FGES(data, g1)
-            est_g5.append(fges_cc_performance)
 
-            fci_cl_performance = use_fci_cl.FCI(data, g1)
-            est_g6.append(fci_cl_performance)
+    with open('results.txt', mode='w') as f:
 
-            grasp_cc_performance = use_grasp_cc.GRASP(data, g1)
-            est_g7.append(grasp_cc_performance)
+        for alg in results:
+            for sim in results[alg]:
+                for result in results[alg][sim]:
+                    f.write(str(alg) + '\t' + str(sim) + '\t' + str(result) + '\n')
 
-            i += 1
 
-    # np.savetxt('PC-OUTPUT.txt', PC, delimiter = '\t')
-    # np.savetxt('FCI-OUTPUT.txt', FCI, delimiter = '\t')
-    # np.savetxt('GES-OUTPUT.txt', GES, delimiter = '\t')
 
-    mf.make_file(est_g1, est_g2, est_g3, est_g4, est_g5, est_g6, est_g7)
 
     print("------------------")
     print("------finish------")

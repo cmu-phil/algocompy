@@ -1,59 +1,68 @@
-from utils import AdjacencyConfusion as AdjConf, ArrowConfusion as ArrConf
-
 import causalcmd.tetrad_cmd_algs as tc
 import pandas as pd
-from utils.SHD import SHD
-
-def FGES(data, G):
-    """
-    Runs PC algorithm with given data.
-    Computes adjacency and Arrowhead confusion between estimated and true graph.
-    Saves results into matrix.
-    -----------
-    data: sample data
-    G: true graph
-    """
-
-    # testpc = pc(data, 0.01, fisherz, True, 0, -1).G
-
-    p = data.shape[1]
-
-    X = []
-
-    for q in range(1,p + 1):
-        X.append('X' + str(q))
-
-    print(X)
-
-    pd.DataFrame(data, columns=X).to_csv("../PC-INPUT.txt", sep="\t", index=False)
-    testfges = tc.fges("../PC-INPUT.txt", 2)
-
-    fgesPerformance = FGESstats(G, testfges)
-
-    return fgesPerformance
+from utils import my_statistics as stat
 
 
-def FGESstats(G, testfges):
-    fgesStat = []
+class use_fges_cc:
+    def __init__(self, data, G):
+        """
+        Runs FGES algorithm with given data.
+        Computes adjacency and Arrowhead confusion between estimated and true graph.
+        Saves results into matrix.
+        -----------
+        data: sample data
+        G: true graph
+        """
 
-    # Adjacency and Arrowhead
-    ACfges = AdjConf.AdjacencyConfusion(G, testfges)
-    ArrCfges = ArrConf.ArrowConfusion(G, testfges)
+        X = self.get_variable_names(data)
 
-    fgesStat.append(ACfges.get_adj_precision())
-    fgesStat.append(ACfges.get_adj_recall())
-    fgesStat.append(ArrCfges.get_arrows_precision())
-    fgesStat.append(ArrCfges.get_arrows_precision_ce())
-    fgesStat.append(ArrCfges.get_arrows_recall())
-    fgesStat.append(ArrCfges.get_arrows_recall_ce())
-    fgesStat.append(ACfges.get_adj_Mc())
-    fgesStat.append(ArrCfges.get_arrows_Mc())
-    fgesStat.append(ACfges.get_adj_F1())
-    fgesStat.append(ArrCfges.get_arrows_F1())
+        pd.DataFrame(data, columns=X).to_csv("../PC-INPUT.txt", sep="\t", index=False)
+        testfges = tc.fges("../PC-INPUT.txt", 2)
 
-    # SHD
-    SHDfges = SHD(G, testfges)
+        self.fgesperformance = stat.stats(G, testfges)
 
-    fgesStat.append(SHDfges.get_shd())
+    def get_variable_names(self, data):
+        p = data.shape[1]
+        X = []
+        for q in range(1, p + 1):
+            X.append('X' + str(q))
+        # print(X)
+        return X
 
-    return fgesStat
+    def get_performance(self):
+        return self.fgesperformance
+
+    def get_alg_name():
+        return "FGES_CC"
+
+class use_fges_cc:
+    def __init__(self):
+        """
+        Runs PC algorithm with given data .
+        Computes adjacency and Arrowhead confusion between estimated and true graph.
+        Saves results into matrix.
+        -----------
+        data: sample data
+        G: true graph
+        """
+
+        self.alpha = 0.01
+
+
+    def run(self, data, G): 
+        # data : dataset
+        # G    : true graph
+        X = self.get_variable_names(data)
+        pd.DataFrame(data, columns=X).to_csv("../PC-INPUT.txt", sep="\t", index=False)
+        return stat.stats(G, tc.fges("../PC-INPUT.txt", 2))
+
+    def __str__(self):
+        return "PC_CC"
+
+    def get_variable_names(self, data):
+        p = data.shape[1]
+        X = []
+        for q in range(1, p + 1):
+            X.append('X' + str(q))
+        # print(X)
+        return X
