@@ -1,0 +1,69 @@
+================================================================================
+PC (Wed, July 13, 2022 05:00:36 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: PC-INPUT.txt
+header: yes
+delimiter: tab
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: PC
+test of independence: Fisher Z Test
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+addOriginalDataset: yes
+alpha: 0.01
+concurrentFAS: no
+conflictRule: 3
+depth: -1
+fasHeuristic: 1
+maxPOrientationMaxPathLength: 3
+numberResampling: 0
+percentResampleSize: 90
+resamplingEnsemble: 1
+resamplingWithReplacement: yes
+stableFAS: yes
+timeLag: 0
+useMaxPOrientationHeuristic: no
+verbose: yes
+
+
+Wed, July 13, 2022 05:00:36 PM: Start data validation on file PC-INPUT.txt.
+Wed, July 13, 2022 05:00:36 PM: End data validation on file PC-INPUT.txt.
+There are 1000 cases and 10 variables.
+
+Wed, July 13, 2022 05:00:36 PM: Start reading in file PC-INPUT.txt.
+Wed, July 13, 2022 05:00:36 PM: Finished reading in file PC-INPUT.txt.
+Wed, July 13, 2022 05:00:36 PM: File PC-INPUT.txt contains 1000 cases, 10 variables.
+
+Start search: Wed, July 13, 2022 05:00:36 PM
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End search: Wed, July 13, 2022 05:00:36 PM
+
+================================================================================
+Graph Nodes:
+X1;X2;X3;X4;X5;X6;X7;X8;X9;X10
+
+Graph Edges:
+1. X1 --- X3
+2. X1 --> X8
+3. X10 --> X6
+4. X10 --> X8
+5. X2 --- X7
+6. X3 --> X10
+7. X4 --> X6
+8. X5 --> X10
+9. X7 --- X9
+10. X8 --> X6

@@ -70,16 +70,12 @@ class make_comparison:
     def average(self, c, reps, results):
 
         with open('averageTEST.txt', mode='w') as a:
-
+            
             for alg in results:
                 for sim in results[alg]:
                     for result in results[alg][sim]:
-                        for i in range(len(result) - reps):
-                            ave = []
-                            bar = result[i:i+reps]
-                            ave.append(np.mean(bar))
-                            i += reps
-                        a.write(str(ave) + '\n')
+                        a.write(str(result) +'\n')
+                        
         # g_stat = stat.average(est_g)
         # for i in g_stat:
         #     m = stat.truncate(i, 2)

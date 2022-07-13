@@ -1,0 +1,95 @@
+================================================================================
+PC (Wed, July 13, 2022 05:01:50 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: PC-INPUT.txt
+header: yes
+delimiter: tab
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: PC
+test of independence: Fisher Z Test
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+addOriginalDataset: yes
+alpha: 0.01
+concurrentFAS: no
+conflictRule: 3
+depth: -1
+fasHeuristic: 1
+maxPOrientationMaxPathLength: 3
+numberResampling: 0
+percentResampleSize: 90
+resamplingEnsemble: 1
+resamplingWithReplacement: yes
+stableFAS: yes
+timeLag: 0
+useMaxPOrientationHeuristic: no
+verbose: yes
+
+
+Wed, July 13, 2022 05:01:50 PM: Start data validation on file PC-INPUT.txt.
+Wed, July 13, 2022 05:01:51 PM: End data validation on file PC-INPUT.txt.
+There are 10000 cases and 20 variables.
+
+Wed, July 13, 2022 05:01:51 PM: Start reading in file PC-INPUT.txt.
+Wed, July 13, 2022 05:01:51 PM: Finished reading in file PC-INPUT.txt.
+Wed, July 13, 2022 05:01:51 PM: File PC-INPUT.txt contains 10000 cases, 20 variables.
+
+Start search: Wed, July 13, 2022 05:01:51 PM
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End search: Wed, July 13, 2022 05:01:51 PM
+
+================================================================================
+Graph Nodes:
+X1;X2;X3;X4;X5;X6;X7;X8;X9;X10;X11;X12;X13;X14;X15;X16;X17;X18;X19;X20
+
+Graph Edges:
+1. X10 --> X13
+2. X13 --> X16
+3. X13 --> X19
+4. X13 --> X3
+5. X13 --> X5
+6. X14 --> X1
+7. X14 --> X4
+8. X16 --> X1
+9. X16 --> X11
+10. X16 --> X14
+11. X16 --> X3
+12. X17 --> X1
+13. X17 --> X15
+14. X17 --> X20
+15. X17 --> X3
+16. X17 --> X4
+17. X17 --> X5
+18. X19 --> X1
+19. X19 --> X11
+20. X19 --> X12
+21. X19 --> X14
+22. X19 --> X4
+23. X3 --> X6
+24. X5 --> X1
+25. X5 --> X12
+26. X6 --> X15
+27. X6 --> X20
+28. X6 --> X9
+29. X7 --> X9
+30. X8 --> X1
+31. X8 --- X10
+32. X8 --> X15
+33. X8 --> X18
+34. X8 --> X4
+35. X9 --> X13
+36. X9 --> X18

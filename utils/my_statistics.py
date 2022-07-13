@@ -36,6 +36,10 @@ def truncate (n, decimals):
         string = ('.' + str(2) + 'f')
         n = format(n, string)
         return n
+    
+def chunk(arr, rep):
+    for i in range(0, len(arr), rep):
+        return arr[i: i + rep]
 
 def stats(truegraph, estgraph):
     """
