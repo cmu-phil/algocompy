@@ -13,7 +13,7 @@ def run():
 
     num_var = [10, 20]
     avg_deg = [2, 4]
-    num_samp = [1e3, 1e4]
+    num_samp = [1000, 10000]
 
     save_data = False
 
