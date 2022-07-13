@@ -20,10 +20,10 @@ def run():
     algs = []
     algs.append(task.task(use_pc_cl.use_pc_cl(), 1))
     algs.append(task.task(use_pc_cc.use_pc_cc(), 2))
-    algs.append(task.task(use_pcmax_cc.use_pcmax_cc(), 3))
-    algs.append(task.task(use_fges_cc.use_fges_cc(), 4))
-    algs.append(task.task(use_fci_cl.use_fci_cl(), 5))
-    algs.append(task.task(use_grasp_cc.use_grasp_cc(), 6))
+    # algs.append(task.task(use_pcmax_cc.use_pcmax_cc(), 3))
+    # algs.append(task.task(use_fges_cc.use_fges_cc(), 4))
+    # algs.append(task.task(use_fci_cl.use_fci_cl(), 5))
+    # algs.append(task.task(use_grasp_cc.use_grasp_cc(), 6))
 
 
     results = {}
@@ -45,18 +45,14 @@ def run():
                         results[alg.get_id()][key].append(alg.run(data, g1))
 
 
-
-    mc.make_comparison(results, algs)
-
-
-    with open('results.txt', mode='w') as f:
+    with open('averageTEST.txt', mode='w') as a:
 
         for alg in results:
             for sim in results[alg]:
                 for result in results[alg][sim]:
-                    f.write(str(alg) + '\t' + str(sim) + '\t' + str(result) + '\n')
+                    a.write(str(result) + '\n')
 
-
+    mc.make_comparison(reps, algs, results)
 
 
     print("------------------")

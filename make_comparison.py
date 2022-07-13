@@ -1,10 +1,11 @@
 from datetime import datetime
 from algs import use_fci_cl, use_fges_cc, use_pc_cc, use_ges_cl, use_grasp_cc, use_pc_cl, use_pcmax_cc
 from utils import my_statistics as stat
+import numpy as np
 
 
 class make_comparison:
-    def __init__(self, results, algs):
+    def __init__(self, reps, algs, results):
 
         with open("Comparison.txt", mode="w") as c:
             self.dateandtime(c)
@@ -16,6 +17,8 @@ class make_comparison:
             self.alg_info(c, algs)
 
             self.weight_info(c)
+
+            self.average(c, reps, results)
 
 
     def dateandtime(self, c):
@@ -64,11 +67,23 @@ class make_comparison:
         c.write('**Write weighting here**')
         c.write('\n' + '\n')
     
-    def average(self, est_g, c):
-        g_stat = stat.average(est_g)
-        for i in g_stat:
-            m = stat.truncate(i, 2)
-            c.write('%s\t' % m)
+    def average(self, c, reps, results):
+
+        with open('averageTEST.txt', mode='w') as a:
+
+            for alg in results:
+                for sim in results[alg]:
+                    for result in results[alg][sim]:
+                        for i in range(len(result) - reps):
+                            ave = []
+                            bar = result[i:i+reps]
+                            ave.append(np.mean(bar))
+                            i += reps
+                        a.write(str(ave) + '\n')
+        # g_stat = stat.average(est_g)
+        # for i in g_stat:
+        #     m = stat.truncate(i, 2)
+        #     c.write('%s\t' % m)
 
 
     def st_dev(self, est_g, c):
