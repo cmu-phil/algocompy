@@ -46,7 +46,7 @@ class make_comparison:
         c.write('F1Adj = F1 statistics for adjacencies\n')
         c.write('F1Arrow = F1 statistics for arrowheads\n')
         c.write('SHD = Structural Hamming Distance\n')
-        # c.write('E = Elapsed time in secinds\n')
+        c.write('E = Elapsed time in secinds\n')
         c.write('\n')
 
 
