@@ -15,15 +15,15 @@ def run():
     avg_deg = [2, 4]
     num_samp = [1000, 10000]
 
-    save_data = False
+    save_data = True
 
     algs = []
     algs.append(task.task(use_pc_cl.use_pc_cl(), 1))
     algs.append(task.task(use_pc_cc.use_pc_cc(), 2))
-    # algs.append(task.task(use_pcmax_cc.use_pcmax_cc(), 3))
-    # algs.append(task.task(use_fges_cc.use_fges_cc(), 4))
-    # algs.append(task.task(use_fci_cl.use_fci_cl(), 5))
-    # algs.append(task.task(use_grasp_cc.use_grasp_cc(), 6))
+    algs.append(task.task(use_pcmax_cc.use_pcmax_cc(), 3))
+    algs.append(task.task(use_fges_cc.use_fges_cc(), 4))
+    algs.append(task.task(use_fci_cl.use_fci_cl(), 5))
+    algs.append(task.task(use_grasp_cc.use_grasp_cc(), 6))
 
 
     results = {}
@@ -45,14 +45,15 @@ def run():
                         results[alg.get_id()][key].append(alg.run(data, g1))
 
 
-    with open('averageTEST.txt', mode='w') as a:
+    with open('results.txt', mode='w') as r:
 
         for alg in results:
             for sim in results[alg]:
                 for result in results[alg][sim]:
-                    a.write(str(result) + '\n')
+                    r.write(str(alg) + '\t' + str(sim) + '\t' + str(result) + '\n')
 
-    mc.make_comparison(reps, algs, results)
+
+    mc.make_comparison(algs, results, reps, num_var, avg_deg, num_samp)
 
 
     print("------------------")

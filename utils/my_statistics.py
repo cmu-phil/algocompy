@@ -12,7 +12,7 @@ def average (stats):
 
 def STdev (stats):
 
-    s = np.std(stats, axis=0)
+    s = np.std(stats, axis=1)
 
     return s
 
@@ -33,13 +33,13 @@ def truncate (n, decimals):
     if a:
         return np.NaN
     else:
-        string = ('.' + str(2) + 'f')
+        string = ('.' + str(decimals) + 'f')
         n = format(n, string)
         return n
     
 def chunk(arr, rep):
     for i in range(0, len(arr), rep):
-        return arr[i: i + rep]
+        yield arr[i: i + rep]
 
 def stats(truegraph, estgraph):
     """
