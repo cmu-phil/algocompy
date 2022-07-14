@@ -1,12 +1,8 @@
-from os import stat
-from xml.etree.ElementTree import tostring
-from matplotlib.style import use
 from algs.use_pc_cc import use_pc_cc
 import make_comparison as mc
 from algs import task, use_fci_cl, use_fges_cc, use_pc_cc, use_ges_cl, use_grasp_cc, use_pc_cl, use_pcmax_cc
 from utils import true_graph as tg, random_sample as sampler
 import numpy as np
-from utils import my_statistics as stat
 
 def run():
     reps = 2

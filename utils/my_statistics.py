@@ -4,30 +4,6 @@ from utils import AdjacencyConfusion as AdjConf, ArrowConfusion as ArrConf
 from utils.SHD import SHD
 
 
-def average (stats):
-
-    s = np.mean(stats, axis=0)
-
-    return s
-
-def STdev (stats):
-
-    s = np.std(stats, axis=1)
-
-    return s
-
-def median (stats):
-
-    s = np.median(stats, axis = 0)
-
-    return s
-
-def worstCase (stats):
-
-    s = np.amin(stats, axis=0)
-
-    return s
-
 def truncate (n, decimals):
     a = math.isnan(n)
     if a:
@@ -36,10 +12,6 @@ def truncate (n, decimals):
         string = ('.' + str(decimals) + 'f')
         n = format(n, string)
         return n
-    
-def chunk(arr, rep):
-    for i in range(0, len(arr), rep):
-        yield arr[i: i + rep]
 
 def stats(truegraph, estgraph):
     """

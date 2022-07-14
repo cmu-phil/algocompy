@@ -1,5 +1,4 @@
 from datetime import datetime
-from algs import use_fci_cl, use_fges_cc, use_pc_cc, use_ges_cl, use_grasp_cc, use_pc_cl, use_pcmax_cc
 from utils import my_statistics as stat
 import numpy as np
 import math
@@ -16,8 +15,6 @@ class make_comparison:
 
             self.alg_info(c, algs)
 
-            self.weight_info(c)
-
             self.average(c, results)
 
             self.st_dev(c, results)
@@ -33,6 +30,7 @@ class make_comparison:
 
         c.write(dt_string)
         c.write('\n' + '\n')
+
 
     def stat_info(self, c):
         c.write('Statistics:')
@@ -75,7 +73,8 @@ class make_comparison:
         c.write('\n' + '\n')
         c.write('**Write weighting here**')
         c.write('\n' + '\n')
-    
+
+
     def average(self, c, results):
 
         c.write("Average:\n\n")
