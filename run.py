@@ -5,13 +5,14 @@ from utils import true_graph as tg, random_sample as sampler
 import numpy as np
 import pickle
 import time
+from utils import my_statistics as st
 
 def run():
-    reps = 2
+    reps = 10
 
-    num_var = [10]
-    avg_deg = [2]
-    num_samp = [10]
+    num_var = [10, 20]
+    avg_deg = [2, 4]
+    num_samp = [1000, 10000]
 
     save_data = False
 
@@ -24,8 +25,8 @@ def run():
     algs.append(task.task(use_fges_cc.use_fges_cc(), 4))
     algs.append(task.task(use_fci_cl.use_fci_cl(), 5))
     algs.append(task.task(use_grasp_cc.use_grasp_cc(), 6))
-    # algs.append(task.task(use_gesbic_cl.use_gesbic_cl(), 7))
-    # algs.append(task.task(use_gescv_cl.use_gescv_cl(), 8))
+    algs.append(task.task(use_gesbic_cl.use_gesbic_cl(), 7))
+    algs.append(task.task(use_gescv_cl.use_gescv_cl(), 8))
 
 
     results = {}
@@ -73,6 +74,7 @@ def run():
 
     finish = time.time()
     total_time = finish - start
+    total_time = st.truncate(total_time, 2)
 
     print("------------------")
     print("------finish------")

@@ -17,9 +17,9 @@ class use_gescv_cl:
     def run(self, data, G):
         maxP = 5
         parameters = {}
-        # parameters["lambda_value"] = -2
+        parameters["lambda_value"] = 2
         parameters["kfold"] = 5
-        parameters["lambda"] = 2.0
+        parameters["lambda"] = 0.01
 
         start = time.time()
         testges = ges(data, 'local_score_CV_general', maxP=maxP, parameters=parameters)['G']
@@ -29,4 +29,4 @@ class use_gescv_cl:
         return stat.stats(G, testges, e_time)
 
     def __str__(self):
-        return "GES_CL"
+        return "GESCV_CL"
