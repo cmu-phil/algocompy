@@ -13,12 +13,13 @@ def truncate (n, decimals):
         n = format(n, string)
         return n
 
-def stats(truegraph, estgraph):
+def stats(truegraph, estgraph, time):
     """
     Compares true graph and estimated graph with adjacency and arrowhead confusion.
     -----------
     truegraph: truth graph
     estgraph: estimated graph from algorithm
+    time: time for algorithm to run
     -----------
     returns list of statistics
     """
@@ -41,7 +42,9 @@ def stats(truegraph, estgraph):
 
     # SHD
     SHDpc = SHD(truegraph, estgraph)
-
     stat.append(SHDpc.get_shd())
+
+    # Estimated time
+    stat.append(time)
 
     return stat

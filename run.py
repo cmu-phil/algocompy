@@ -3,9 +3,10 @@ import make_comparison as mc
 from algs import task, use_fci_cl, use_fges_cc, use_pc_cc, use_ges_cl, use_grasp_cc, use_pc_cl, use_pcmax_cc
 from utils import true_graph as tg, random_sample as sampler
 import numpy as np
+import pickle
 
 def run():
-    reps = 2
+    reps = 10
 
     num_var = [10, 20]
     avg_deg = [2, 4]
@@ -31,15 +32,22 @@ def run():
             d = a / (p - 1)
             for n in num_samp:
                 for rep in range(reps):
+                    count = rep + 1
                     data, g = sampler.sample(p, d, n)
                     if save_data == True:
-                        np.savetxt(str() + '_sample.txt', data, delimiter = '\t')
+                        np.savetxt(str(count) + '_sample.txt', data, delimiter = '\t')
                     g1 = tg.TrueGraph(g, p, 1)
                     for alg in algs:
                         key = (p,a,n)
                         if rep == 0: results[alg.get_id()][key] = []
                         results[alg.get_id()][key].append(alg.run(data, g1))
 
+
+    with open('results.p', mode='wb') as f:
+        pickle.dump(results, f)
+
+    # with open('results.p', mode='rb') as f:
+    #     results = pickle.load(f)
 
     with open('results.txt', mode='w') as r:
 

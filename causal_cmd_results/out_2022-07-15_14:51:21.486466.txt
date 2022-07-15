@@ -1,0 +1,108 @@
+================================================================================
+GRaSP (Fri, July 15, 2022 03:05:53 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: GRaSP-INPUT.txt
+header: yes
+delimiter: tab
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: GRaSP
+test of independence: Fisher Z Test
+score: Sem BIC Score
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+addOriginalDataset: yes
+alpha: 0.01
+cacheScores: yes
+graspDepth: 4
+graspNonSingularDepth: 1
+graspOrderedAlg: yes
+graspSingularDepth: 1
+graspUseDataOrder: yes
+graspUseVermaPearl: no
+numberResampling: 0
+numStarts: 1
+penaltyDiscount: 2
+percentResampleSize: 90
+precomputeCovariances: yes
+resamplingEnsemble: 1
+resamplingWithReplacement: yes
+semBicRule: 1
+semBicStructurePrior: 0.0
+timeLag: 0
+verbose: yes
+
+
+Fri, July 15, 2022 03:05:53 PM: Start data validation on file GRaSP-INPUT.txt.
+Fri, July 15, 2022 03:05:53 PM: End data validation on file GRaSP-INPUT.txt.
+There are 10000 cases and 20 variables.
+
+Fri, July 15, 2022 03:05:53 PM: Start reading in file GRaSP-INPUT.txt.
+Fri, July 15, 2022 03:05:53 PM: Finished reading in file GRaSP-INPUT.txt.
+Fri, July 15, 2022 03:05:53 PM: File GRaSP-INPUT.txt contains 10000 cases, 20 variables.
+
+Start search: Fri, July 15, 2022 03:05:53 PM
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End search: Fri, July 15, 2022 03:05:54 PM
+
+================================================================================
+Graph Nodes:
+X1;X2;X3;X4;X5;X6;X7;X8;X9;X10;X11;X12;X13;X14;X15;X16;X17;X18;X19;X20
+
+Graph Edges:
+1. X1 --> X15
+2. X1 --> X18
+3. X10 --> X14
+4. X11 --> X13
+5. X11 --> X14
+6. X11 --> X18
+7. X11 --> X20
+8. X13 --> X18
+9. X14 --> X20
+10. X15 --> X19
+11. X19 --> X20
+12. X2 --> X12
+13. X2 --> X20
+14. X2 --- X7
+15. X2 --> X9
+16. X3 --> X10
+17. X3 --> X14
+18. X3 --> X16
+19. X3 --> X18
+20. X3 --> X19
+21. X3 --> X8
+22. X4 --> X10
+23. X4 --> X12
+24. X4 --> X8
+25. X5 --> X14
+26. X5 --> X20
+27. X6 --> X15
+28. X6 --> X17
+29. X6 --> X20
+30. X7 --> X12
+31. X7 --> X16
+32. X7 --> X17
+33. X7 --> X19
+34. X7 --> X8
+35. X8 --> X10
+36. X8 --> X20
+37. X8 --> X9
+38. X9 --> X11
+39. X9 --> X12
+40. X9 --> X20
+
+Graph Attributes:
+score : 218825.7344

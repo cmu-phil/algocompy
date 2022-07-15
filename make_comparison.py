@@ -19,7 +19,9 @@ class make_comparison:
 
             self.st_dev(c, results)
 
-            self.worst_case(c, results)
+            self.max_case(c, results)
+
+            self.min_case(c, results)
 
             self.median_case(c, results)
 
@@ -44,7 +46,7 @@ class make_comparison:
         c.write('F1Adj = F1 statistics for adjacencies\n')
         c.write('F1Arrow = F1 statistics for arrowheads\n')
         c.write('SHD = Structural Hamming Distance\n')
-        c.write('E = Elapsed time in secinds\n')
+        c.write('E = Elapsed time in seconds\n')
         c.write('\n')
 
 
@@ -65,8 +67,9 @@ class make_comparison:
         for alg in algs:
             c.write( str(alg.get_id()) + '. ' + str(alg) + '\n')
 
+        c.write('\n')
+        c.write('* Opening the Causal Command jar and loading in the data is considered in the Elapsed time for CC algorithms *')
         c.write('\n' + '\n')
-
 
     def weight_info(self, c):
         c.write('Weighting of Statistics:')
@@ -84,14 +87,13 @@ class make_comparison:
         for alg in results:
             for sim in results[alg]:
                 c.write('\t' + str(alg) + '     ')
-                temp = np.array(results[alg][sim])
-                avg = np.mean(temp, 0)
+                avg = np.nanmean(results[alg][sim], 0)
                 for i in avg:
                     check = math.isnan(i)
                     if check:
                         c.write("nan    ")
                     else:
-                        c.write(str(stat.truncate(i, 2)) + "   ")  
+                        c.write(str(stat.truncate(i, 2)) + "   ")
                 c.write('\n')
         c.write('\n')
 
@@ -104,8 +106,7 @@ class make_comparison:
         for alg in results:
             for sim in results[alg]:
                 c.write('\t' + str(alg) + '     ')
-                temp = np.array(results[alg][sim])
-                avg = np.std(temp, 0)
+                avg = np.std(results[alg][sim], 0)
                 for i in avg:
                     check = math.isnan(i)
                     if check:
@@ -116,16 +117,33 @@ class make_comparison:
         c.write('\n')
 
 
-    def worst_case(self, c, results):
-        c.write("Worst Case:\n\n")
+    def min_case(self, c, results):
+        c.write("Min Case:\n\n")
 
         c.write('\tAlg   AP     AR     AHP    AHPC   AHR    AHRC   McAdj  McArr  F1Adj  F1Arr  SHD    E\n')
         
         for alg in results:
             for sim in results[alg]:
                 c.write('\t' + str(alg) + '     ')
-                temp = np.array(results[alg][sim])
-                avg = np.amin(temp, 0)
+                avg = np.amin(results[alg][sim], 0)
+                for i in avg:
+                    check = math.isnan(i)
+                    if check:
+                        c.write("nan    ")
+                    else:
+                        c.write(str(stat.truncate(i, 2)) + "   ")  
+                c.write('\n')
+        c.write('\n')
+
+    def max_case(self, c, results):
+        c.write("Max Case:\n\n")
+
+        c.write('\tAlg   AP     AR     AHP    AHPC   AHR    AHRC   McAdj  McArr  F1Adj  F1Arr  SHD    E\n')
+        
+        for alg in results:
+            for sim in results[alg]:
+                c.write('\t' + str(alg) + '     ')
+                avg = np.amax(results[alg][sim], 0)
                 for i in avg:
                     check = math.isnan(i)
                     if check:
@@ -144,8 +162,7 @@ class make_comparison:
         for alg in results:
             for sim in results[alg]:
                 c.write('\t' + str(alg) + '     ')
-                temp = np.array(results[alg][sim])
-                avg = np.median(temp, 0)
+                avg = np.median(results[alg][sim], 0)
                 for i in avg:
                     check = math.isnan(i)
                     if check:

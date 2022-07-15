@@ -1,7 +1,7 @@
 import pandas as pd
 import causalcmd.tetrad_cmd_algs as tc
-
 from utils import my_statistics as stat
+import time
 
 
 class use_pcmax_cc:
@@ -23,7 +23,12 @@ class use_pcmax_cc:
         # G    : true graph
         X = self.get_variable_names(data)
         pd.DataFrame(data, columns=X).to_csv("../PC-INPUT.txt", sep="\t", index=False)
-        return stat.stats(G, tc.pcmax("../PC-INPUT.txt", self.alpha))
+        start = time.time()
+        testpcmax = tc.pcmax("../PC-INPUT.txt", self.alpha)
+        finish = time.time()
+        e_time = finish - start
+
+        return stat.stats(G,testpcmax, e_time)
 
     def __str__(self):
         return "PCMAX_CC"

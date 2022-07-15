@@ -1,7 +1,7 @@
 import causalcmd.tetrad_cmd_algs as tc
 import pandas as pd
-
 from utils import my_statistics as stat
+import time
 
 class use_grasp_cc:
     def __init__(self):
@@ -22,7 +22,12 @@ class use_grasp_cc:
         # G    : true graph
         X = self.get_variable_names(data)
         pd.DataFrame(data, columns=X).to_csv("../GRaSP-INPUT.txt", sep="\t", index=False)
-        return stat.stats(G, tc.grasp("../GRaSP-INPUT.txt", 2))
+        start = time.time()
+        testgrasp = tc.grasp("../GRaSP-INPUT.txt", 2)
+        finish = time.time()
+        e_time = finish - start
+        
+        return stat.stats(G, testgrasp, e_time)
 
     def __str__(self):
         return "GRASP_CC"

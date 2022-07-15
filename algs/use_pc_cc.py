@@ -1,7 +1,7 @@
 import pandas as pd
 import causalcmd.tetrad_cmd_algs as tc
-
 from utils import my_statistics as stat
+import time
 
 class use_pc_cc:
     def __init__(self):
@@ -22,7 +22,12 @@ class use_pc_cc:
         # G    : true graph
         X = self.get_variable_names(data)
         pd.DataFrame(data, columns=X).to_csv("../PC-INPUT.txt", sep="\t", index=False)
-        return stat.stats(G, tc.pc("../PC-INPUT.txt", self.alpha))
+        start = time.time()
+        testpc_cc = tc.pc("../PC-INPUT.txt", self.alpha)
+        finish = time.time()
+        e_time = finish - start
+
+        return stat.stats(G, testpc_cc, e_time)
 
     def __str__(self):
         return "PC_CC"

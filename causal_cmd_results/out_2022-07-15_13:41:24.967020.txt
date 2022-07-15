@@ -1,0 +1,84 @@
+================================================================================
+FGES (Fri, July 15, 2022 01:42:55 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: PC-INPUT.txt
+header: yes
+delimiter: tab
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FGES
+score: Sem BIC Score
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+addOriginalDataset: yes
+faithfulnessAssumed: no
+maxDegree: 1000
+meekVerbose: no
+numberResampling: 0
+parallelized: yes
+penaltyDiscount: 2
+percentResampleSize: 90
+precomputeCovariances: yes
+resamplingEnsemble: 1
+resamplingWithReplacement: yes
+semBicRule: 1
+semBicStructurePrior: 0.0
+symmetricFirstStep: no
+timeLag: 0
+verbose: yes
+
+
+Fri, July 15, 2022 01:42:55 PM: Start data validation on file PC-INPUT.txt.
+Fri, July 15, 2022 01:42:55 PM: End data validation on file PC-INPUT.txt.
+There are 1000 cases and 20 variables.
+
+Fri, July 15, 2022 01:42:55 PM: Start reading in file PC-INPUT.txt.
+Fri, July 15, 2022 01:42:55 PM: Finished reading in file PC-INPUT.txt.
+Fri, July 15, 2022 01:42:55 PM: File PC-INPUT.txt contains 1000 cases, 20 variables.
+
+Start search: Fri, July 15, 2022 01:42:55 PM
+--------------------------------------------------------------------------------
+Elapsed initializeForwardEdgesFromEmptyGraph = 28 ms
+--------------------------------------------------------------------------------
+End search: Fri, July 15, 2022 01:42:55 PM
+
+================================================================================
+Graph Nodes:
+X1;X2;X3;X4;X5;X6;X7;X8;X9;X10;X11;X12;X13;X14;X15;X16;X17;X18;X19;X20
+
+Graph Edges:
+1. X1 --> X10
+2. X1 --> X12
+3. X1 --- X17
+4. X1 --- X3
+5. X1 --- X9
+6. X10 --> X19
+7. X11 --- X9
+8. X16 --- X18
+9. X18 --> X19
+10. X2 --- X14
+11. X2 --- X5
+12. X4 --> X10
+13. X4 --- X6
+14. X6 --> X12
+15. X7 --- X3
+16. X8 --> X19
+17. X9 --- X13
+
+Graph Attributes:
+BIC: 21846.849257
+
+Graph Node Attributes:
+Score: [X1: 1553.9212860959312;X2: 1145.866881303146;X3: 1056.2544433826927;X4: 1112.579083760363;X5: 1120.136751663387;X6: 1060.9102404288128;X7: 1108.1056006372835;X8: 1091.594468166423;X9: 1514.5266239795087;X10: 1135.828130246508;X11: 182.08010057456806;X12: 1109.4959313467498;X13: 1047.5631146117948;X14: 1079.2149932831712;X15: 1103.3094913377827;X16: 1079.0154170705264;X17: 1080.247203799348;X18: 1067.4396273007953;X19: 1068.9837471566618;X20: 1129.7761205437068]
