@@ -1,6 +1,6 @@
 from algs.use_pc_cc import use_pc_cc
 import make_comparison as mc
-from algs import task, use_fci_cl, use_fges_cc, use_gesbic_cl, use_gescv_cl, use_pc_cc, use_grasp_cc, use_pc_cl, use_pcmax_cc
+from algs import task, use_fci_cl, use_fges_cc, use_gesbic_cl, use_pc_cc, use_grasp_cc, use_pc_cl, use_pcmax_cc
 from utils import true_graph as tg, random_sample as sampler
 import numpy as np
 import pickle

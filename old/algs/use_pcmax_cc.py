@@ -1,12 +1,13 @@
-import causalcmd.tetrad_cmd_algs as tc
 import pandas as pd
-from utils import my_statistics as stat
+import old.causalcmd.tetrad_cmd_algs as tc
+from old.utils import my_statistics as stat
 import time
 
-class use_fges_cc:
+
+class use_pcmax_cc:
     def __init__(self):
         """
-        Runs FGES algorithm with given data .
+        Runs PCMAX algorithm with given data .
         Computes adjacency and Arrowhead confusion between estimated and true graph.
         Saves results into matrix.
         -----------
@@ -23,14 +24,14 @@ class use_fges_cc:
         X = self.get_variable_names(data)
         pd.DataFrame(data, columns=X).to_csv("../PC-INPUT.txt", sep="\t", index=False)
         start = time.time()
-        testfges = tc.fges("../PC-INPUT.txt", 2)        
+        testpcmax = tc.pcmax("../PC-INPUT.txt", self.alpha)
         finish = time.time()
         e_time = finish - start
 
-        return stat.stats(G, testfges, e_time)
+        return stat.stats(G,testpcmax, e_time)
 
     def __str__(self):
-        return "FGES_CC"
+        return "PCMAX_CC"
 
     def get_variable_names(self, data):
         p = data.shape[1]

@@ -1,6 +1,6 @@
-import causalcmd.tetrad_cmd_algs as tc
+import old.causalcmd.tetrad_cmd_algs as tc
 import pandas as pd
-from utils import my_statistics as stat
+from old.utils import my_statistics as stat
 import time
 
 class use_grasp_cc:

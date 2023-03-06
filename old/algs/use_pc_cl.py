@@ -1,6 +1,6 @@
 from causallearn.search.ConstraintBased.PC import pc
 from causallearn.utils.cit import fisherz
-from utils import my_statistics as stat
+from old.utils import my_statistics as stat
 import time
 
 class use_pc_cl:

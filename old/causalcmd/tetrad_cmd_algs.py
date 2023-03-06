@@ -3,13 +3,13 @@ from datetime import datetime
 
 from causallearn.utils.TXT2GeneralGraph import txt2generalgraph
 
-jar = "causal-cmd-1.6.1-jar-with-dependencies.jar"
+jar = "old/causal-cmd-1.6.1-jar-with-dependencies.jar"
 
 stamp = str(datetime.now()).replace(" ", "_")
-prefix = "causal_cmd_results/out_" + stamp
+prefix = "old/causal_cmd_results/out_" + stamp
 
 # Check whether the specified path exists or not
-isExist = os.path.exists("causal_cmd_results")
+isExist = os.path.exists("old/causal_cmd_results")
 
 if not isExist:
     # Create a new directory because it does not exist

@@ -1,6 +1,6 @@
 from causallearn.search.ConstraintBased.FCI import fci
 from causallearn.utils.cit import fisherz
-from utils import my_statistics as stat
+from old.utils import my_statistics as stat
 import time
 
 

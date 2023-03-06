@@ -1,7 +1,7 @@
 import numpy as np
 import math
-from utils import AdjacencyConfusion as AdjConf, ArrowConfusion as ArrConf
-from utils.SHD import SHD
+from old.utils import ArrowConfusion as ArrConf, AdjacencyConfusion as AdjConf
+from old.utils.SHD import SHD
 
 
 def truncate (n, decimals):

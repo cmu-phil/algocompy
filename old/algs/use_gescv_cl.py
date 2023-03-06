@@ -1,5 +1,5 @@
 from causallearn.search.ScoreBased.GES import ges
-from utils import my_statistics as stat
+from old.utils import my_statistics as stat
 import time
 
 

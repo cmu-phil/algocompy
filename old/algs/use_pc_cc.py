@@ -1,13 +1,12 @@
 import pandas as pd
-import causalcmd.tetrad_cmd_algs as tc
-from utils import my_statistics as stat
+import old.causalcmd.tetrad_cmd_algs as tc
+from old.utils import my_statistics as stat
 import time
 
-
-class use_pcmax_cc:
+class use_pc_cc:
     def __init__(self):
         """
-        Runs PCMAX algorithm with given data .
+        Runs PC algorithm with given data .
         Computes adjacency and Arrowhead confusion between estimated and true graph.
         Saves results into matrix.
         -----------
@@ -24,14 +23,14 @@ class use_pcmax_cc:
         X = self.get_variable_names(data)
         pd.DataFrame(data, columns=X).to_csv("../PC-INPUT.txt", sep="\t", index=False)
         start = time.time()
-        testpcmax = tc.pcmax("../PC-INPUT.txt", self.alpha)
+        testpc_cc = tc.pc("../PC-INPUT.txt", self.alpha)
         finish = time.time()
         e_time = finish - start
 
-        return stat.stats(G,testpcmax, e_time)
+        return stat.stats(G, testpc_cc, e_time)
 
     def __str__(self):
-        return "PCMAX_CC"
+        return "PC_CC"
 
     def get_variable_names(self, data):
         p = data.shape[1]
@@ -40,3 +39,4 @@ class use_pcmax_cc:
             X.append('X' + str(q))
         # print(X)
         return X
+
