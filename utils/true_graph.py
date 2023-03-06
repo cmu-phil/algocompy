@@ -9,9 +9,7 @@ from causallearn.utils.DAG2CPDAG import dag2cpdag
 def TrueGraph(g, p, myrange):
 
     if myrange == 0:
-        M = p
-
-        nodes = [GraphNode('x'+str(x)) for x in range(M)]
+        nodes = [GraphNode('X' + str(q)) for q in range(1, p + 1)]
 
         G = GeneralGraph(nodes)
 

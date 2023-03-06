@@ -3,7 +3,7 @@ from datetime import datetime
 
 from causallearn.utils.TXT2GeneralGraph import txt2generalgraph
 
-jar = "causal-cmd-1.4.1-jar-with-dependencies.jar"
+jar = "causal-cmd-1.6.1-jar-with-dependencies.jar"
 
 stamp = str(datetime.now()).replace(" ", "_")
 prefix = "causal_cmd_results/out_" + stamp
@@ -16,7 +16,7 @@ if not isExist:
     os.makedirs("causal_cmd_results")
     print("A new directory, causal-cmd-results, is created.")
 
-print("Result will be sent to this file: " + prefix + ".txt")
+print("Result will be sent to this file: " + prefix + "_out.txt")
 
 def pc(path, alpha):
     os.system("java -Xmx10g -jar " + jar + " "
@@ -29,7 +29,7 @@ def pc(path, alpha):
               + "--alpha " + str(alpha) + " "
               + "--verbose "
               + "--prefix " + prefix)
-    return txt2generalgraph(prefix + ".txt")
+    return txt2generalgraph(prefix + "_out.txt")
 
 def pcmax(path, alpha):
     os.system("java -Xmx10g -jar " + jar + " "
@@ -42,7 +42,7 @@ def pcmax(path, alpha):
               + "--alpha " + str(alpha) + " "
               + "--verbose "
               + "--prefix " + prefix)
-    return txt2generalgraph(prefix + ".txt")
+    return txt2generalgraph(prefix + "_out.txt")
 
 def fci(path, alpha):
     os.system("java -Xmx10g -jar " + jar + " "
@@ -55,7 +55,7 @@ def fci(path, alpha):
               + "--alpha " + str(alpha) + " "
               + "--verbose "
               + "--prefix " + prefix)
-    return txt2generalgraph(prefix + ".txt")
+    return txt2generalgraph(prefix + "_out.txt")
 
 def fges(path, penaltyDiscount):
     os.system("java -Xmx10g -jar " + jar + " "
@@ -69,7 +69,7 @@ def fges(path, penaltyDiscount):
               + "--parallel "
               + "--verbose "
               + "--prefix " + prefix)
-    return txt2generalgraph(prefix + ".txt")
+    return txt2generalgraph(prefix + "_out.txt")
 
 def grasp(path, penaltyDiscount):
     os.system("java -Xmx10g -jar " + jar + " "
@@ -83,7 +83,7 @@ def grasp(path, penaltyDiscount):
               + "--penaltyDiscount " + str(penaltyDiscount) + " "
               + "--verbose "
               + "--prefix " + prefix)
-    return txt2generalgraph(prefix + ".txt")
+    return txt2generalgraph(prefix + "_out.txt")
 
 def graspfci(path, penaltyDiscount):
     os.system("java -Xmx10g -jar " + jar + " "
@@ -97,7 +97,7 @@ def graspfci(path, penaltyDiscount):
               + "--penaltyDiscount " + str(penaltyDiscount) + " "
               + "--verbose "
               + "--prefix " + prefix)
-    return txt2generalgraph(prefix + ".txt")
+    return txt2generalgraph(prefix + "_out.txt")
 
 def boss_tuck(path, penaltyDiscount):
     os.system("java -Xmx10g -jar " + jar + " "
@@ -113,7 +113,7 @@ def boss_tuck(path, penaltyDiscount):
               + "--penaltyDiscount " + str(penaltyDiscount) + " "
               + "--verbose "
               + "--prefix " + prefix)
-    return txt2generalgraph(prefix + ".txt")
+    return txt2generalgraph(prefix + "_out.txt")
 
 def boss(path, penaltyDiscount):
     os.system("java -Xmx10g -jar " + jar + " "
@@ -129,7 +129,7 @@ def boss(path, penaltyDiscount):
               + "--penaltyDiscount " + str(penaltyDiscount) + " "
               + "--verbose "
               + "--prefix " + prefix)
-    return txt2generalgraph(prefix + ".txt")
+    return txt2generalgraph(prefix + "_out.txt")
 
 def rges(path, penaltyDiscount):
     os.system("java -Xmx10g -jar " + jar + " "
@@ -143,4 +143,4 @@ def rges(path, penaltyDiscount):
               + "--penaltyDiscount " + str(penaltyDiscount) + " "
               + "--verbose "
               + "--prefix " + prefix)
-    return txt2generalgraph(prefix + ".txt")
+    return txt2generalgraph(prefix + "_out.txt")

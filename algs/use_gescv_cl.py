@@ -22,7 +22,7 @@ class use_gescv_cl:
         parameters["lambda"] = 0.01
 
         start = time.time()
-        testges = ges(data, 'local_score_CV_general', maxP=maxP, parameters=parameters)['G']
+        testges = ges(data, 'local_score_BIC', maxP=maxP, parameters=parameters)['G']
         finish = time.time()
         e_time = finish - start
 

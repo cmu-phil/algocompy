@@ -8,23 +8,14 @@ class make_comparison:
 
         with open("Comparison.txt", mode="w") as c:
             self.dateandtime(c)
-
             self.stat_info(c)
-
             self.sim_info(c, reps, num_var, avg_deg, num_samp)
-
             self.alg_info(c, algs)
-
             self.average(c, results)
-
             self.st_dev(c, results)
-
             self.max_case(c, results)
-
             self.min_case(c, results)
-
             self.median_case(c, results)
-
 
     def dateandtime(self, c):
         dt = datetime.now()

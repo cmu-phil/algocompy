@@ -12,6 +12,10 @@ class AdjacencyConfusion:
     __adjTn = 0
 
     def __init__(self, truth: Graph, est: Graph):
+
+        print('truth', truth)
+        print('est', est)
+
         """
         Compute and store the adjacency confusion between two graphs.
         Parameters
