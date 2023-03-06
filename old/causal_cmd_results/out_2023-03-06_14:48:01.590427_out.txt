@@ -1,0 +1,76 @@
+================================================================================
+FGES (Mon, March 06, 2023 02:50:30 PM)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 9
+
+Dataset
+--------------------------------------------------------------------------------
+file: PC-INPUT.txt
+header: yes
+delimiter: tab
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FGES
+score: Sem BIC Score
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+addOriginalDataset: yes
+faithfulnessAssumed: no
+maxDegree: 1000
+meekVerbose: no
+numberResampling: 0
+parallelized: yes
+penaltyDiscount: 2
+percentResampleSize: 90
+resamplingEnsemble: 1
+resamplingWithReplacement: yes
+seed: -1
+semBicRule: 1
+semBicStructurePrior: 0.0
+symmetricFirstStep: no
+timeLag: 0
+verbose: yes
+
+
+Mon, March 06, 2023 02:50:30 PM: Start data validation on file PC-INPUT.txt.
+Mon, March 06, 2023 02:50:30 PM: End data validation on file PC-INPUT.txt.
+There are 10000 cases and 10 variables.
+
+Mon, March 06, 2023 02:50:30 PM: Start reading in file PC-INPUT.txt.
+Mon, March 06, 2023 02:50:30 PM: Finished reading in file PC-INPUT.txt.
+Mon, March 06, 2023 02:50:30 PM: File PC-INPUT.txt contains 10000 cases, 10 variables.
+
+Start search: Mon, March 06, 2023 02:50:30 PM
+--------------------------------------------------------------------------------
+Elapsed initializeForwardEdgesFromEmptyGraph = 12 ms
+--------------------------------------------------------------------------------
+End search: Mon, March 06, 2023 02:50:31 PM
+
+================================================================================
+Graph Nodes:
+X1;X2;X3;X4;X5;X6;X7;X8;X9;X10
+
+Graph Edges:
+1. X2 --- X5
+2. X2 --> X9
+3. X3 --> X10
+4. X3 --> X7
+5. X4 --- X3
+6. X5 --- X6
+7. X6 --> X7
+8. X6 --> X9
+9. X9 --> X10
+
+Graph Attributes:
+BIC: 54950.216617
+
+Graph Node Attributes:
+Score: [X1: 5485.731517098684;X2: 5524.158357498795;X3: 8043.545584914224;X4: 2974.506403710279;X5: 5494.037321571614;X6: 5544.681981197129;X7: 5546.756766562189;X8: 5457.380533440457;X9: 5491.920568709761;X10: 5387.497582628994]
