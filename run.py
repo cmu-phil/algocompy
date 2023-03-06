@@ -26,7 +26,7 @@ def run():
     algs.append(task.task(use_fci_cl.use_fci_cl(), 5))
     algs.append(task.task(use_grasp_cc.use_grasp_cc(), 6))
     algs.append(task.task(use_gesbic_cl.use_gesbic_cl(), 7))
-    algs.append(task.task(use_gescv_cl.use_gescv_cl(), 8))
+    # algs.append(task.task(use_gescv_cl.use_gescv_cl(), 8))
 
 
     results = {}
